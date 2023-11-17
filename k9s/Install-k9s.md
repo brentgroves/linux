@@ -6,11 +6,17 @@
 
 ## Via LinuxBrew
 
-- This works but the snap install did not install k9s in /snap/bin but it did install config files in /var/snap/k9s
-
+````bash
 brew install derailed/k9s/k9s
+which k9s
+/home/linuxbrew/.linuxbrew/bin/k9s
+```
+
+
 
 ## Via Snap (Dont use this way)
+
+- This works but the snap install did not install k9s in /snap/bin but it did install config files in /var/snap/k9s
 
 DOES NOT INSTALL THE BINARY AT /snap/bin for some unknown reason.
 
