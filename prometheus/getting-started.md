@@ -2,13 +2,13 @@
 
 ## References
 
-https://prometheus.io/docs/prometheus/latest/getting_started/
-https://prometheus.io/download/
-https://github.com/prometheus/prometheus
+<https://prometheus.io/docs/prometheus/latest/getting_started/>
+<https://prometheus.io/download/>
+<https://github.com/prometheus/prometheus>
 
 ## Prometheus
 
-https://github.com/prometheus/prometheus
+<https://github.com/prometheus/prometheus>
 Prometheus, a Cloud Native Computing Foundation project, is a systems and service monitoring system. It collects metrics from configured targets at given intervals, evaluates rule expressions, displays the results, and can trigger alerts when specified conditions are observed.
 
 The features that distinguish Prometheus from other metrics and monitoring systems are:
@@ -36,9 +36,9 @@ Docker images are available on Quay.io or Docker Hub.
 You can launch a Prometheus container for trying it out with
 
 docker run --name prometheus -d -p 127.0.0.1:9090:9090 prom/prometheus
-Prometheus will now be reachable at http://localhost:9090/.
+Prometheus will now be reachable at <http://localhost:9090/>.
 
-https://prometheus.io/download/
+<https://prometheus.io/download/>
 Download the latest release of Prometheus for your platform, then extract and run it:
 
 tar xvfz prometheus-*.tar.gz
@@ -66,7 +66,7 @@ wget https://github.com/prometheus/prometheus/releases/download/v2.45.1/promethe
 tar xvfz prometheus-*.tar.gz
 cd prometheus-*
 cp ~/src/repsys/linux/prometheus/prometheus.yaml .
-./prometheus --config.file=prometheus.yml
+./prometheus --config.file=prometheus.yaml
 ```
 
 Prometheus should start up. You should also be able to browse to a status page about itself at **[localhost:9090](http://localhost:9090)**. Give it a couple of seconds to collect data about itself from its own HTTP metrics endpoint.
@@ -92,6 +92,7 @@ prometheus_target_interval_length_seconds{instance="localhost:9090", interval="1
 15.001414484
 prometheus_target_interval_length_seconds{instance="localhost:9090", interval="15s", job="prometheus", quantile="0.99"}
 ```
+
 This should return a number of different time series (along with the latest value recorded for each), each with the metric name prometheus_target_interval_length_seconds, but with different labels. These labels designate different latency percentiles and target group intervals.
 If we are interested only in 99th percentile latencies, we could use this query:
 
@@ -109,7 +110,7 @@ For more about the expression language, see the **[expression language documenta
 
 ## Using the graphing interface
 
-To graph expressions, navigate to http://localhost:9090/graph and use the "Graph" tab.
+To graph expressions, navigate to <http://localhost:9090/graph> and use the "Graph" tab.
 
 For example, enter the following expression to graph the per-second rate of chunks being created in the self-scraped Prometheus:
 
@@ -138,7 +139,7 @@ cd node_exporter-*.*-amd64
 
 ```
 
-You should now have example targets listening on http://localhost:8080/metrics, http://localhost:8081/metrics, and http://localhost:8082/metrics.
+You should now have example targets listening on <http://localhost:8080/metrics>, <http://localhost:8081/metrics>, and <http://localhost:8082/metrics>.
 
 Configure Prometheus to monitor the sample targets
 Now we will configure Prometheus to scrape these new targets. Let's group all three endpoints into one job called node. We will imagine that the first two endpoints are production targets, while the third one represents a canary instance. To model this in Prometheus, we can add several groups of endpoints to a single job, adding extra labels to each group of targets. In this example, we will add the group="production" label to the first group of targets, while adding group="canary" to the second.
@@ -164,6 +165,3 @@ scrape_configs:
 ```
 
 Go to the expression browser and verify that Prometheus now has information about time series that these example endpoints expose, such as node_cpu_seconds_total.
-
-
-
