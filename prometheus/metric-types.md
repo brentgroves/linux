@@ -73,3 +73,125 @@ http_requests_total{api="add_product"} 4633433
 ## HELP is used to provide a description for the metric and # TYPE a type for the metric
 
 Now, let's get into more detail about each of the Prometheus metrics in the exposition format.
+
+## Counters
+
+Counter metrics are used for measurements that only increase. Therefore they are always cumulative—their value can only go up. The only exception is when the counter is restarted, in which case its value is reset to zero.
+
+The actual value of a counter is not typically very useful on its own. A counter value is often used to compute the delta between two timestamps or the rate of change over time.
+
+For example, a typical use case for counters is measuring API calls, which is a measurement that will always increase:
+
+```exposition-format
+# HELP http_requests_total Total number of http api requests
+# TYPE http_requests_total counter
+http_requests_total{api="add_product"} 4633433
+
+```
+
+The metric name is http_requests_total, it has one label named api with a value of add_product and the counter’s value is 4633433. This means that the add_product API has been called 4,633,433 times since the last service start or counter reset. By convention, counter metrics are usually suffixed with _total.
+
+The absolute number does not give us much information, but when used with PromQL’s rate function (or a similar function in another monitoring backend), it helps us understand the requests per second that API is receiving. The PromQL query below calculates the average requests per second over the last five minutes:
+
+```exposition-format
+rate(http_requests_total{api="add_product"}[5m])
+```
+
+To calculate the absolute change over a time period, we would use a delta function which in PromQL is called increase():
+
+increase(http_requests_total{api="add_product"}[5m])
+
+This would return the total number of requests made in the last five minutes, and it would be the same as multiplying the per second rate by the number of seconds in the interval (five minutes in our case):
+
+rate(http_requests_total{api="add_product"}[5m]) * 5 * 60
+
+Other examples where you would want to use a counter metric would be to measure the number of orders in an e-commerce site, the number of bytes sent and received over a network interface or the number of errors in an application. If it is a metric that will always go up, use a counter.
+
+Below is an example of how to create and increase a counter metric using the Prometheus client library for Python:
+
+```python
+from prometheus_client import Counter
+api_requests_counter = Counter(
+                        'http_requests_total',
+                        'Total number of http api requests',
+                        ['api']
+                       )
+api_requests_counter.labels(api='add_product').inc()
+ 
+```
+
+Note that since counters can be reset to zero, you want to make sure that the backend you use to store and query your metrics will support that scenario and still provide accurate results in case of a counter restart.
+
+Gauges
+Gauge metrics are used for measurements that can arbitrarily increase or decrease. This is the metric type you are likely more familiar with since the actual value with no additional processing is meaningful and they are often used. For example, metrics to measure temperature, CPU, and memory usage, or the size of a queue are gauges.
+
+For example, to measure the memory usage in a host, we could use a gauge metric like:
+
+```exposition-format
+# HELP node_memory_used_bytes Total memory used in the node in bytes
+# TYPE node_memory_used_bytes gauge
+node_memory_used_bytes{hostname="host1.domain.com"} 943348382
+```
+
+The metric above indicates that the memory used in node host1.domain.com at the time of the measurement is around 900 megabytes. The value of the metric is meaningful without any additional calculation because it tells us how much memory is being consumed on that node.
+
+Unlike when using counters, rate and delta functions don’t make sense with gauges. However, functions that compute the average, maximum, minimum, or percentiles for a specific series are often used with gauges. In Prometheus, the names of those functions are avg_over_time, max_over_time, min_over_time, and quantile_over_time. To compute the average of memory used on host1.domain.com in the last ten minutes, you could do this:
+
+```exposition-format
+avg_over_time(node_memory_used_bytes{hostname="host1.domain.com"}[10m])
+```
+
+In statistics, a k-th percentile, also known as percentile score or centile, is a score below which a given percentage k of scores in its frequency distribution falls or a score at or below which a given percentage falls.
+
+To create a gauge metric using the Prometheus client library for Python you would do something like this:
+
+```python
+from prometheus_client import Gauge
+memory_used = Gauge(
+                'node_memory_used_bytes',
+                'Total memory used in the node in bytes',
+                ['hostname']
+              )
+memory_used.labels(hostname='host1.domain.com').set(943348382)
+```
+
+
+Histograms
+Histogram metrics are useful to represent a distribution of measurements. They are often used to measure request duration or response size.
+
+Histograms divide the entire range of measurements into a set of intervals—named buckets—and count how many measurements fall into each bucket.
+
+A histogram metric includes a few items:
+
+A counter with the total number of measurements. The metric name uses the _count suffix.
+A counter with the sum of the values of all measurements. The metric name uses the _sum suffix.
+The histogram buckets are exposed as counters using the metric name with a _bucket suffix and a le label indicating the bucket upper inclusive bound. Buckets in Prometheus are inclusive, that is a bucket with an upper bound of N (i.e., le label) includes all data points with a value less than or equal to N.
+
+For example, the summary metric to measure the response time of the instance of the add_product API endpoint running on host1.domain.com could be represented as:
+
+```exposition-format
+# HELP http_request_duration_seconds Api requests response time in seconds
+# TYPE http_request_duration_seconds histogram
+http_request_duration_seconds_sum{api="add_product" instance="host1.domain.com"} 8953.332
+http_request_duration_seconds_count{api="add_product" instance="host1.domain.com"} 27892
+http_request_duration_seconds_bucket{api="add_product" instance="host1.domain.com" le="0"}
+http_request_duration_seconds_bucket{api="add_product", instance="host1.domain.com", le="0.01"} 0
+http_request_duration_seconds_bucket{api="add_product", instance="host1.domain.com", le="0.025"} 8
+http_request_duration_seconds_bucket{api="add_product", instance="host1.domain.com", le="0.05"} 1672
+http_request_duration_seconds_bucket{api="add_product", instance="host1.domain.com", le="0.1"} 8954
+http_request_duration_seconds_bucket{api="add_product", instance="host1.domain.com", le="0.25"} 14251
+http_request_duration_seconds_bucket{api="add_product", instance="host1.domain.com", le="0.5"} 24101
+http_request_duration_seconds_bucket{api="add_product", instance="host1.domain.com", le="1"} 26351
+http_request_duration_seconds_bucket{api="add_product", instance="host1.domain.com", le="2.5"} 27534
+http_request_duration_seconds_bucket{api="add_product", instance="host1.domain.com", le="5"} 27814
+http_request_duration_seconds_bucket{api="add_product", instance="host1.domain.com", le="10"} 27881
+http_request_duration_seconds_bucket{api="add_product", instance="host1.domain.com", le="25"} 27890
+http_request_duration_seconds_bucket{api="add_product", instance="host1.domain.com", le="+Inf"} 27892
+  
+```
+    
+The example above includes the sum, the count, and 12 buckets. The sum and count can be used to compute the average of a measurement over time. In PromQL, the average duration for the last five minutes will be computed as follows:
+
+```PromQL
+rate(http_request_duration_seconds_sum{api="add_product", instance="host1.domain.com"}[5m]) / rate(http_request_duration_seconds_count{api="add_product", instance="host1.domain.com"}[5m])
+```
