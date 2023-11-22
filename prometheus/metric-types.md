@@ -103,7 +103,9 @@ increase(http_requests_total{api="add_product"}[5m])
 
 This would return the total number of requests made in the last five minutes, and it would be the same as multiplying the per second rate by the number of seconds in the interval (five minutes in our case):
 
+```PromQL
 rate(http_requests_total{api="add_product"}[5m]) * 5 * 60
+```
 
 Other examples where you would want to use a counter metric would be to measure the number of orders in an e-commerce site, the number of bytes sent and received over a network interface or the number of errors in an application. If it is a metric that will always go up, use a counter.
 
@@ -122,7 +124,8 @@ api_requests_counter.labels(api='add_product').inc()
 
 Note that since counters can be reset to zero, you want to make sure that the backend you use to store and query your metrics will support that scenario and still provide accurate results in case of a counter restart.
 
-Gauges
+## Gauges
+
 Gauge metrics are used for measurements that can arbitrarily increase or decrease. This is the metric type you are likely more familiar with since the actual value with no additional processing is meaningful and they are often used. For example, metrics to measure temperature, CPU, and memory usage, or the size of a queue are gauges.
 
 For example, to measure the memory usage in a host, we could use a gauge metric like:
@@ -155,8 +158,8 @@ memory_used = Gauge(
 memory_used.labels(hostname='host1.domain.com').set(943348382)
 ```
 
+## Histograms
 
-Histograms
 Histogram metrics are useful to represent a distribution of measurements. They are often used to measure request duration or response size.
 
 Histograms divide the entire range of measurements into a set of intervals—named buckets—and count how many measurements fall into each bucket.
@@ -164,7 +167,7 @@ Histograms divide the entire range of measurements into a set of intervals—nam
 A histogram metric includes a few items:
 
 A counter with the total number of measurements. The metric name uses the _count suffix.
-A counter with the sum of the values of all measurements. The metric name uses the _sum suffix.
+A counter with the sum of the values of all measurements. The metric name uses the_sum suffix.
 The histogram buckets are exposed as counters using the metric name with a _bucket suffix and a le label indicating the bucket upper inclusive bound. Buckets in Prometheus are inclusive, that is a bucket with an upper bound of N (i.e., le label) includes all data points with a value less than or equal to N.
 
 For example, the summary metric to measure the response time of the instance of the add_product API endpoint running on host1.domain.com could be represented as:
@@ -189,9 +192,74 @@ http_request_duration_seconds_bucket{api="add_product", instance="host1.domain.c
 http_request_duration_seconds_bucket{api="add_product", instance="host1.domain.com", le="+Inf"} 27892
   
 ```
-    
+
 The example above includes the sum, the count, and 12 buckets. The sum and count can be used to compute the average of a measurement over time. In PromQL, the average duration for the last five minutes will be computed as follows:
 
 ```PromQL
 rate(http_request_duration_seconds_sum{api="add_product", instance="host1.domain.com"}[5m]) / rate(http_request_duration_seconds_count{api="add_product", instance="host1.domain.com"}[5m])
+```
+
+## Configure rules for aggregating scraped data into new time series
+
+Though not a problem in our example, queries that aggregate over thousands of time series can get slow when computed ad-hoc. To make this more efficient, Prometheus can prerecord expressions into new persisted time series via configured recording rules. Let's say we are interested in recording the per-second rate of cpu time (node_cpu_seconds_total) averaged over all cpus per instance (but preserving the job, instance and mode dimensions) as measured over a window of 5 minutes. We could write this as:
+
+```PromQL
+avg by (job, instance, mode) (rate(node_cpu_seconds_total[5m]))
+
+{instance="localhost:8082", job="node", mode="idle"}
+0.9135084745762239
+{instance="localhost:8082", job="node", mode="iowait"}
+0.005915254237288151
+{instance="localhost:8082", job="node", mode="irq"}
+0
+{instance="localhost:8082", job="node", mode="nice"}
+0
+{instance="localhost:8082", job="node", mode="softirq"}
+0.00023728813559321826
+{instance="localhost:8082", job="node", mode="steal"}
+0
+{instance="localhost:8082", job="node", mode="system"}
+0.017703389830508367
+{instance="localhost:8082", job="node", mode="user"}
+0.0552966101694923
+{instance="localhost:8080", job="node", mode="idle"}
+0.913415254237302
+{instance="localhost:8080", job="node", mode="iowait"}
+0.005932203389830509
+
+```
+
+## Try graphing this expression
+
+To record the time series resulting from this expression into a new metric called job_instance_mode:node_cpu_seconds:avg_rate5m, create a file with the following recording rule and save it as prometheus.rules.yml:
+
+```yaml
+groups:
+- name: cpu-node
+  rules:
+  - record: job_instance_mode:node_cpu_seconds:avg_rate5m
+    expr: avg by (job, instance, mode) (rate(node_cpu_seconds_total[5m]))
+
+```
+
+To make Prometheus pick up this new rule, add a rule_files statement in your prometheus.yml. The config should now look like this:
+
+Restart Prometheus with the new configuration and verify that a new time series with the metric name job_instance_mode:node_cpu_seconds:avg_rate5m is now available by querying it through the expression browser or graphing it.
+
+## Reloading configuration
+
+```bash
+ps | grep prometheus
+kill -s SIGHUP 173930
+```
+
+As mentioned in the configuration documentation a Prometheus instance can have its configuration reloaded without restarting the process by using the SIGHUP signal. If you're running on Linux this can be performed by using kill -s SIGHUP <PID>, replacing <PID> with your Prometheus process ID.
+
+## Shutting down your instance gracefully
+
+While Prometheus does have recovery mechanisms in the case that there is an abrupt process failure it is recommend to use the SIGTERM signal to cleanly shutdown a Prometheus instance. If you're running on Linux this can be performed by using kill -s SIGTERM <PID>, replacing <PID> with your Prometheus process ID.
+
+```bash
+ps | grep prometheus
+kill -s SIGTERM 173930
 ```
