@@ -21,6 +21,7 @@ Applications: The usage of time series models is twofold:
 
 ## Time Series Analysis is used for many applications such as:
 
+- !!!Tooling Studies
 - Economic Forecasting
 - Sales Forecasting
 - Budgetary Analysis
@@ -31,3 +32,4 @@ Applications: The usage of time series models is twofold:
 - Workload Projections
 - Utility Studies
 - Census Analysis
+
