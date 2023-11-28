@@ -2,7 +2,8 @@
 
 ## references
 
-https://www.itl.nist.gov/div898/handbook/pmc/section4/pmc4.htm
+<https://www.itl.nist.gov/div898/handbook/>
+<https://www.itl.nist.gov/div898/handbook/pmc/section4/pmc4.htm>
 
 ## Introduction to Time Series Analysis
 
@@ -19,7 +20,7 @@ Applications: The usage of time series models is twofold:
 - Obtain an understanding of the underlying forces and structure that produced the observed data
 - Fit a model and proceed to forecasting, monitoring or even feedback and feedforward control.
 
-## Time Series Analysis is used for many applications such as:
+## Time Series Analysis is used for many applications such as
 
 - !!!Tooling Studies
 - Economic Forecasting
@@ -32,4 +33,3 @@ Applications: The usage of time series models is twofold:
 - Workload Projections
 - Utility Studies
 - Census Analysis
-
