@@ -33,3 +33,31 @@ Applications: The usage of time series models is twofold:
 - Workload Projections
 - Utility Studies
 - Census Analysis
+
+## Techniques
+
+The fitting of time series models can be an ambitious undertaking. There are many methods of model fitting including the following:
+
+- **[Box-Jenkins ARIMA models](arima.md)**
+- Box-Jenkins Multivariate Models
+- Holt-Winters Exponential Smoothing (single, double, triple)
+
+The user's application and preference will decide the selection of the appropriate technique. It is beyond the realm and intention of the authors of this handbook to cover all these methods. The overview presented here will start by looking at some basic smoothing techniques:
+
+- Averaging Methods
+- Exponential Smoothing Techniques
+
+Later in this section we will discuss the Box-Jenkins modeling methods and Multivariate Time Series.
+
+1) What are Moving Average or Smoothing Techniques?
+
+Inherent in the collection of data taken over time is some form of random variation. There exist methods for reducing of canceling the effect due to random variation. An often-used technique in industry is "smoothing". This technique, when properly applied, reveals more clearly the underlying trend, seasonal and cyclic components.
+
+There are two distinct groups of smoothing methods
+
+- Averaging Methods
+- Exponential Smoothing Methods
+
+We will first investigate some averaging methods, such as the "simple" average of all past data.
+
+- **[smoothing techniques](smoothing-techniques.md)**

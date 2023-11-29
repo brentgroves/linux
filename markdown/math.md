@@ -1,11 +1,19 @@
-https://www.youtube.com/watch?v=yw8PSfd_48s
+# Math
 
-![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+Insert math expressions in TeX and LaTeX style syntax. This content is then rendered using the highly popular MathJax library.
 
-https://katex.org/docs/supported.html
-https://katex.org/
+## references
+
+<https://github.blog/2022-05-19-math-support-in-markdown/>
+<https://www.youtube.com/watch?v=yw8PSfd_48s>
+<https://katex.org/docs/supported.html>
+<https://katex.org/>
+
+## Inline
 
 $x^2$
+
+## Block
 
 $$
 \tilde{a}\\
@@ -14,3 +22,5 @@ $$
 \sqrt{x}\\
 \overgroup{AB}
 $$
+
+**![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)**
