@@ -22,7 +22,7 @@ Applications: The usage of time series models is twofold:
 
 ## Time Series Analysis is used for many applications such as
 
-- !!!Tooling Studies
+- Tooling Studies
 - Economic Forecasting
 - Sales Forecasting
 - Budgetary Analysis
@@ -61,3 +61,7 @@ There are two distinct groups of smoothing methods
 We will first investigate some averaging methods, such as the "simple" average of all past data.
 
 - **[smoothing techniques](smoothing-techniques.md)**
+
+- **[single moving averages](./single_moving_average.md)**
+
+- **[centered moving averages](./centered_moving_averages.md)**

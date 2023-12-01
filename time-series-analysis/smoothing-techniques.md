@@ -122,6 +122,6 @@ $$
         x_2 \, + \, ... \, + \, \left ( \frac{1} {n} \right ) x_n \, .
 $$
 
-The (1n) are the weights and, of course, they sum to 1.
+The (1/n) are the weights and, of course, they sum to 1.
 
 Average weighs all past observations equally
