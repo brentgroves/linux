@@ -3,6 +3,9 @@
 ## References
 
 <https://microstack.run/>
+<https://ubuntu.com/openstack/tutorials>
+<https://microstack.run/docs/multi-node>
+https://ubuntu.com/blog/k8s-native-microstack
 
 ## Why MicroStack?
 
