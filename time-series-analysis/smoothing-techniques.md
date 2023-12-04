@@ -125,3 +125,14 @@ $$
 The (1/n) are the weights and, of course, they sum to 1.
 
 Average weighs all past observations equally
+
+- **[Single Moving Average](./single_moving_average.md)**
+- **[centered_moving_average](./centered_moving_average.md)**
+
+## Double Moving Averages for a Linear Trend Process
+
+Unfortunately, neither the mean of all data nor the moving average of the most recent M values, when used as forecasts for the next period, are able to cope with a significant trend.
+
+There exists a variation on the MA procedure that often does a better job of handling trend. It is called Double Moving Averages for a  Linear Trend Process. It calculates a second moving average from the original moving average, using the same value for M. As soon as both single and double moving averages are available, a computer routine uses these averages to compute a slope and intercept, and then forecasts one or more periods ahead.
+
+- **[Exponential Smoothing](./exponential_smoothing.md)**
