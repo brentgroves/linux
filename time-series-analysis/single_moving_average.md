@@ -8,7 +8,7 @@
 
 An alternative way to summarize the past data is to compute the mean of successive smaller sets of numbers of past data as follows.
 
-    Recall the set of numbers 9, 8, 9, 12, 9, 12, 11, 7, 13, 9, 11, 10 which were the dollar amount of 12 suppliers selected at random. Let us set M, the size of the "smaller set" equal to 3. Then the average of the first 3 numbers is:   (9 + 8 + 9) / 3 = 8.667.
+* Recall the set of numbers 9, 8, 9, 12, 9, 12, 11, 7, 13, 9, 11, 10 which were the dollar amount of 12 suppliers selected at random. Let us set M, the size of the "smaller set" equal to 3. Then the average of the first 3 numbers is:   (9 + 8 + 9) / 3 = 8.667.
 
 This is called "smoothing" (i.e., some form of averaging). This smoothing process is continued by advancing one period and calculating the next average of three numbers, dropping the first number.
 
