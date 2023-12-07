@@ -139,4 +139,35 @@ Third, let’s compute prediction error number 1 as follows:
 
 ![](https://miro.medium.com/v2/resize:fit:628/format:webp/0*-o98xwATcf_FyE1Q.png)
 
+Where: $Y_t$ is the true value (Y_true); and $Y2_t$ is the predicted value (Y_pred).
+
+```python
+df['Precent Error1'] = 0.00
+for i in range(5,39):
+    df['Precent Error1'][i] = abs(( df['Y_true'][i] - df['Y_pred'][i] ) / df['Y_true'][i])
+df.head(8)
+```
+
+![](https://miro.medium.com/v2/resize:fit:720/format:webp/1*syl_aLgkJzZN2zQELe_8yw.png)
+
+```python
+df.tail()
+```
+
+![](https://miro.medium.com/v2/resize:fit:720/format:webp/1*O8ttu3M8Hyouq2ClAaH4Qw.png)
+
+Fourth, let’s compute prediction error number 2 as follows:
+
+![](https://miro.medium.com/v2/resize:fit:640/format:webp/0*X3ers5u7MEQg7XVY.png)
+
+```python
+df['Precent Error2'] = 0.00
+for i in range(5,39):
+    df['Precent Error2'][i] = ((df['Y_pred'][i] - df['Y_true'][i])/ df['Y_true'][i-1])**2
+df.head(8)
+
+```
+
+![](https://miro.medium.com/v2/resize:fit:720/format:webp/1*MvZx82VyvHlkX64IJT3uWg.png)
+
 **[STOPPED HERE on MA tutorial](https://medium.com/@polanitzer/time-series-methodologies-part-3-double-moving-average-6aba4a5fbb7e)**
