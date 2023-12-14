@@ -1,6 +1,11 @@
 # What is OpenStack
 
+WHAT IS OPENSTACK? HOW DOES IT BUILD AN IAAS CLOUD?
+OpenStack is a leader in open source cloud management systems (CMS) that, while it can be used to build PaaS and SaaS model clouds, was initially intended to provide IaaS cloud functionality. What is OpenStack and how does it provide an Infrastructure-as-a-Service? OpenStack is a collection of (primarily) python-based software projects that manage access to pooled storage, compute and network resources. There is a growing system of service projects that extend OpenStack’s functionality, but which are anchored by a a core set of six projects: Neutron (Networking), Nova (Compute) Glance (Image Management), Swift (Object Storage), Cinder (Block Storage) and Keystone (Authorization and Authentication). Want more detail?
+
 ## References
+
+<https://kumul.us/what-is-openstack/>
 
 <https://ubuntu.com/tutorials/explore-openstack-components-and-set-up-an-openstack-client#1-overview>
 
