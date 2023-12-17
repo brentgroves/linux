@@ -19,6 +19,13 @@ ssh-keygen -t ed25519 -C "bcieslik@mobexglobal.com"
 ssh-keygen -t ed25519 -C "sjackson@mobexglobal.com"
 ssh-keygen -t ed25519 -C "kyoung@mobexglobal.com"
 ssh-keygen -t ed25519 -C brent.groves@gmail.com 
+ssh-keygen -t ed25519 -C rdecker@linamar.com 
+ssh-keygen -t ed25519 -C bhall@linamar.com
+
+# start the ssh-agent if not already started
+# We don't normally need to stop and start the ssh-agent on Ubuntu 22.04 desktop but on Ubuntu 22.04 server you may need to
+
+eval "$(ssh-agent -s)"
 
 # Add the SSH private key to the SSH-agent 
 

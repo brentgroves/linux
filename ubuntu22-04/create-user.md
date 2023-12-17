@@ -10,7 +10,7 @@ Use adduser command followed by the new <username>:
 ```bash
 # check existing sudo users
 grep '^sudo:.*$' /etc/group | cut -d: -f4
-brent,bcook,sjackson,bcieslik,kyoung,jdavis,cstangland
+brent,bcook,sjackson,bcieslik,kyoung,jdavis,cstangland,rdecker,bhall
 
 sudo adduser bcieslik // "Brendan Cieslik" 248-208-5446 bcieslik@mobexglobal.com
 Adding user newuser' ... Adding new group newuser' (1001) ...
@@ -24,7 +24,7 @@ Retype new password: k8sAdmin1!
 passwd: password updated successfully
 
 # Use the usermod command to add the user to the sudo group:
-brent,bcook,sjackson,bcieslik,kyoung,jdavis,cstangland
+brent,bcook,sjackson,bcieslik,kyoung,jdavis,cstangland,rdecker,bhall
 sudo usermod -aG sudo cstangland
 
 # Verify the permission change
@@ -57,4 +57,7 @@ ssh-copy-id cstangland@reports11
 ssh-copy-id jdavis@reports11
 ssh-copy-id kyoung@reports11
 ssh-copy-id brent@reports11
+ssh-copy-id rdecker@reports11
+ssh-copy-id bhall@reports11
+
 ```

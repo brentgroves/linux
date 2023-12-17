@@ -9,6 +9,7 @@ Note you must have admin permissions to Azure Dev Ops project to do this.
 ## Add RSA support to SSH
 
 ```bash
+mkdir ~/.ssh
 nvim ~/.ssh/config
 Host ssh.dev.azure.com
     User git
@@ -23,6 +24,8 @@ ssh-keygen -C "bcieslik@mobexglobal.com"
 ssh-keygen -C "sjackson@mobexglobal.com"
 ssh-keygen -C "kyoung@mobexglobal.com"
 ssh-keygen -C "bgroves@mobexglobal.com"
+ssh-keygen -C "rdecker@linamar.com"
+ssh-keygen -C "bhall@linamar.com"
 
 # start the ssh-agent if not already started
 # We don't normally need to stop and start the ssh-agent on Ubuntu 22.04 desktop but on Ubuntu 22.04 server you may need to
