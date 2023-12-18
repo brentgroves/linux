@@ -3,8 +3,19 @@
 ## references
 
 <https://phoenixnap.com/kb/install-r-ubuntu>
+<https://www.digitalocean.com/community/tutorials/how-to-install-r-on-ubuntu-22-04>
+<https://medium.com/@jamie84mclaughlin/installing-r-and-the-tidyverse-on-ubuntu-20-04-60170020649b>
 
-Install R on Ubuntu from CRAN Repository
+## Important install dependancies
+
+<https://medium.com/@jamie84mclaughlin/installing-r-and-the-tidyverse-on-ubuntu-20-04-60170020649b>
+
+<!-- There are installation dependencies on some fairly major packages. Both tidyverse, httr and odbc require installations at the command line before they can be installed in R. These should help install the required elements: -->
+
+sudo apt install libssl-dev libcurl4-openssl-dev unixodbc-dev libxml2-dev libmariadb-dev libfontconfig1-dev libharfbuzz-dev libfribidi-dev libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev
+
+## Install R on Ubuntu from CRAN Repository
+
 To install R from the CRAN repository:
 
 ```bash
@@ -16,6 +27,9 @@ gpg --show-keys /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
 
 sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/"
 sudo apt install r-base r-base-dev -y
+
+
+
 
 # Enter the R command to access the R console:
 
