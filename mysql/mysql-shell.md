@@ -35,4 +35,10 @@ When asked in the dialogue box to configure the repository, make sure you choose
 Install MySQL Shell with this command:
 sudo apt-get install mysql-shell
 
+# If you get the error 
+# Err:4 http://repo.mysql.com/apt/ubuntu jammy InRelease
+#   The following signatures couldn't be verified because the public key is not available: NO_PUBKEY B7B3B788A8D3785C
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B7B3B788A8D3785C
+
+sudo gpg --recv-keys B7B3B788A8D3785C
 ```

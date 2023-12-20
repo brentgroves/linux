@@ -2,7 +2,13 @@
 
 You could also skip this and install the mysql-shell which is more advanced.
 
-sudo apt install mysql-client-core-8.0
+## references
+
+<https://dev.mysql.com/doc/refman/8.0/en/mysql.html>
+
+<https://www.bytebase.com/blog/how-to-install-mysql-client-on-mac-ubuntu-centos-windows/>
+
+sudo apt-get install mysql-client
 
 ## configure defaults
 
@@ -38,6 +44,7 @@ Note that the same package works on all supported Debian and Ubuntu platforms.
 
 Update the MySQL APT repository configuration package with the following command:
 sudo apt-get install mysql-apt-config
+sudo apt-get remove mysql-apt-config
 
 When asked in the dialogue box to configure the repository, make sure you choose MySQL 8.0 as the release series you want.
 

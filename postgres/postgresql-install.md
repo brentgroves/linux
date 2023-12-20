@@ -1,8 +1,19 @@
-https://devopscube.com/install-postgresql-on-ubuntu/
-https://www.enterprisedb.com/postgres-tutorials/how-install-postgres-ubuntu
+# Postgresql Install
 
+If you only need psql installed go to **[psql](./psql/psql-install.md)**
 
-https://www.bigbinary.com/blog/configure-postgresql-to-allow-remote-connection
+## references
+
+<https://devopscube.com/install-postgresql-on-ubuntu/>
+<https://www.enterprisedb.com/postgres-tutorials/how-install-postgres-ubuntu>
+
+## install
+
+echo "deb [arch=amd64] <http://apt.postgresql.org/pub/repos/apt> jammy-pgdg main" | sudo tee -a /etc/apt/sources.list.d/pgdg.list
+
+## config
+
+<https://www.bigbinary.com/blog/configure-postgresql-to-allow-remote-connection>
 In order to fix this issue we need to find postgresql.conf. In different systems it is located at different place. I usually search for it.
 
 $ find / -name "postgresql.conf"
@@ -18,8 +29,7 @@ listen_addresses = '*'
 Now restart postgresql server.
 $ netstat -nlt
 
-
-https://nst.sourceforge.net/nst/docs/faq/ch06s02.html#:~:text=To%20enable%20the%20PostgreSQL%20server,used%20to%20start%20the%20server.
+<https://nst.sourceforge.net/nst/docs/faq/ch06s02.html#:~:text=To%20enable%20the%20PostgreSQL%20server,used%20to%20start%20the%20server>.
 
 By default, the setup_postgresql script starts the PostgreSQL database such that it only accepts Unix-domain connections. This means you will not be able to connect to the database from external machines.
 
