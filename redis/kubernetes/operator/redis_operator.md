@@ -78,3 +78,5 @@ There are four different Objects available under redis.redis.opstreelabs.in/v1be
 - Redis Sentinel
 
 <https://operatorhub.io/operator/redis-operator>
+
+<https://github.com/ot-container-kit/redis-operator>

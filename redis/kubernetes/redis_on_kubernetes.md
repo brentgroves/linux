@@ -49,7 +49,9 @@ Actually setting up a Redis cluster on top of Kubernetes is easy enough. Here ar
 
 1. Set up Kubernetes. As a preliminary step, you need to deploy Kubernetes. We won't walk through how to do that here, but suffice it to say that you can run Kubernetes locally using a tool like K3s, or you can deploy it on a set of servers. You can also use a cloud-based managed Kubernetes service, like Amazon EKS, which simplifies the setup process because the control plane software is provided for you.
 
-2. Create a StatefulSet. Next, you need to create a StatefulSet. A StatefulSet is a workload object that makes it possible to deploy Pods (which host Kubernetes workloads) with unique identifiers – which you don't get from a standard Kubernetes deployment. If you're running a database or data store like Redis, having a unique identifier for each Pod is important because it allows you to keep Pods connected to a specific database even if the Pods fail and are restarted, or if they move to a different node. Without a StatefulSet, you'd have no way to establish persistent links between Pods and data stores.
+This is an old article now we can use a **[Redis Operator](./operator/redis_operator.md)** to deploy redis.
+
+2.Create a StatefulSet. Next, you need to create a StatefulSet. A StatefulSet is a workload object that makes it possible to deploy Pods (which host Kubernetes workloads) with unique identifiers – which you don't get from a standard Kubernetes deployment. If you're running a database or data store like Redis, having a unique identifier for each Pod is important because it allows you to keep Pods connected to a specific database even if the Pods fail and are restarted, or if they move to a different node. Without a StatefulSet, you'd have no way to establish persistent links between Pods and data stores.
 
 So, set up a StatefulSet to manage the nodes in your Redis cluster. Be sure to specify the number of replicas you want for the Pods and the container image to use. Here's an example with the minimum configuration you'd need:
 
