@@ -2,6 +2,7 @@
 
 <brent.groves@outlook.com>
 Feb 9, 24:Spirit1$!
+myDW/kors/t`8V8Uj\/*ht>;M6
 
 an Azure data factory and SQL server it also had a 1 node aks but I deleted it because it was a couple hundred dollars per month.
 
