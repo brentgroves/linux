@@ -8,6 +8,17 @@ Azure SQL Database offers several service tiers to target different workloads: B
 - The Premium (Business Critical) service tier is designed for powerful applications that demand low-latency responses, fast recovery in case of any infrastructure failures, analyzing data loads, etc. If an application is critical for your business, you should go with the Premium service tier. The storage size is the same as for the General Purpose service tier – from 1Gb to 4 TB
 - The Hyperscale service tier is a new option that is present in the vCore model only. It offers much more scalable storage with significantly more power for computing, more than in any other service tier. The size of a database can be up to 100 TB in the Hyperscale service tier and databases don’t have a definite maximal size initially. It grows when you need it. Backups and restores are performed much faster and the overall performance is much higher, no matter which data volumes it operates
 
+## **[DTU-based purchasing model overview](https://learn.microsoft.com/en-us/azure/azure-sql/database/service-tiers-dtu?view=azuresql)**
+
+Database transaction units (DTUs)
+A database transaction unit (DTU) represents a blended measure of CPU, memory, reads, and writes. Service tiers in the DTU-based purchasing model are differentiated by a range of compute sizes with a fixed amount of included storage, fixed retention period for backups, and fixed price. All service tiers in the DTU-based purchasing model provide flexibility of changing compute sizes with minimal downtime; however, there is a switch over period where connectivity is lost to the database for a short amount of time, which can be mitigated using retry logic. Single databases and elastic pools are billed hourly based on service tier and compute size.
+
+For a single database at a specific compute size within a service tier, Azure SQL Database guarantees a certain level of resources for that database (independent of any other database). This guarantee provides a predictable level of performance. The amount of resources allocated for a database is calculated as a number of DTUs and is a bundled measure of compute, storage, and I/O resources.
+
+The ratio among these resources is originally determined by an online transaction processing (OLTP) benchmark workload designed to be typical of real-world OLTP workloads. When your workload exceeds the amount of any of these resources, your throughput is throttled, resulting in slower performance and time-outs.
+
+For single databases, the resources used by your workload don't impact the resources available to other databases in the Azure cloud. Likewise, the resources used by other workloads don't impact the resources available to your database.
+
 <!-- https://azure.microsoft.com/en-us/pricing/details/azure-sql-database/single/ -->
 # Announcing New Lower Price Tier for Cloud Native Applications on Azure SQL
 
