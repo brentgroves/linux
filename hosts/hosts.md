@@ -1,6 +1,8 @@
+206.186.133.20 adfs.linamar.com
+10.254.61.51     linus.linamar.com
 172.20.0.41     frt-kor43.busche-cnc.com
 172.20.0.41     frt-kor43
-10.1.0.113      reports-alb.busche-cnc.com 
+10.1.0.113      reports-alb.busche-cnc.com
 10.1.0.116      reports41
 10.1.0.117      reports42
 10.1.0.118      reports43
@@ -34,8 +36,7 @@
 20.9.106.76     foo.bar.com
 20.9.106.76     foo.com
 
-
-https://phoenixnap.com/kb/ubuntu-20-04-change-hostname
+<https://phoenixnap.com/kb/ubuntu-20-04-change-hostname>
 hostnamectl
 hostnamectl set-hostname reports22
 
