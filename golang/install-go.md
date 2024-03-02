@@ -1,5 +1,7 @@
 # install on ubuntu
 
+```bash
+
 <https://us.ovhcloud.com/community/tutorials/how-to-install-go-ubuntu/>
 Installation of Go
 To install Go on Ubuntu, the easiest way is to use apt-get command:
@@ -8,6 +10,7 @@ sudo apt-get update && sudo apt-get -y install golang-go
 go version
 go version go1.18.1 linux/amd64
 Go allow you to manage multiple installed versions. For example, to install the version 1.17:
+go install golang.org/dl/go1.22.0@latest
 go install golang.org/dl/go1.20@latest
 https://go.dev/dl/go1.20.8.linux-386.tar.gz
 Output should be like this:
@@ -20,6 +23,7 @@ in the folder
 .
 Next, you can use this binary to install the version 1.20:
 ~/go/bin/go1.20 download
+~/go/bin/go1.22.0 download
 Output should be like this:
 $ ~/go/bin/go1.20 download
 Downloaded   0.0% (    16384 / 134787877 bytes) ...
