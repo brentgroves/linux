@@ -3,6 +3,7 @@ sign in to office.com to get github password. EAxejwisiakJip3
 sudo snap install curl
 sudo apt install build-essential
 git
+chrome
 pass
 code
 hosts
@@ -44,7 +45,6 @@ meld
 ghex
 postman
 gnome system monitor - System monitor was already installed on ubuntu 22.04
-chrome
 teams
 docker
 sudo apt install libnss3-tools

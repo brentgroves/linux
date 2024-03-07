@@ -55,5 +55,6 @@ cat ~/.ssh/id_ed25519.pub
 cd ~
 git clone git@github.com:brentgroves/dotfiles.git
 
-
 ```
+
+## **[install repsys](./freshstart.sh)**

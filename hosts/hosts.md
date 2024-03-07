@@ -1,5 +1,11 @@
-206.186.133.20 adfs.linamar.com
-10.254.61.51     linus.linamar.com
+206.186.133.20  adfs.linamar.com
+10.254.61.51    linus.linamar.com
+10.1.0.125      repsys11
+10.1.0.125      repsys11.busche-cnc.com
+10.1.0.126      repsys12
+10.1.0.126      repsys12.busche-cnc.com
+10.1.0.127      repsys13
+10.1.0.127      repsys13.busche-cnc.com
 172.20.0.41     frt-kor43.busche-cnc.com
 172.20.0.41     frt-kor43
 10.1.0.113      reports-alb.busche-cnc.com
