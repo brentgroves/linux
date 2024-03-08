@@ -51,7 +51,7 @@ meld
 ghex
 postman
 gnome system monitor - System monitor was already installed on ubuntu 22.04
-teams
+<!-- teams  -->
 docker
 sudo apt install libnss3-tools
 microk8s
