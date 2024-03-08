@@ -41,6 +41,7 @@
 20.37.141.8     mongo-aks
 20.9.106.76     foo.bar.com
 20.9.106.76     foo.com
+10.1.2.74       busche-sql
 
 <https://phoenixnap.com/kb/ubuntu-20-04-change-hostname>
 hostnamectl

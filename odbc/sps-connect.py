@@ -66,18 +66,10 @@ try:
     #             row = cursor.fetchone()
 
     # CAN NOT GET THIS TO WORK EXCEPT WITH JDBC TJDS DRIVER
-    server = 'busche-sql.busche-cnc.com'
-    database = 'cribmaster'
-    username = 'sa'
-    password = 'buschecnc1'   
-    with pyodbc.connect('DSN=cm;UID='+username+';PWD='+ password) as conn:
-        with conn.cursor() as cursor:
-            cursor.execute("select '1' as one '2' as two;")
-            row = cursor.fetchone()
-            while row:
-                print (str(row[0]) + " " + str(row[1]))
-                row = cursor.fetchone()
-
+    # server = 'busche-sql'
+    # database = 'cribmaster'
+    # username = 'sa'
+    # password = 'buschecnc1'   
     # # # driver= 'ODBC Driver 17 for SQL Server'
     # # driver= '{ODBC Driver 17 for SQL Server}'
 
@@ -93,20 +85,20 @@ try:
 
     # CAN NOT GET THIS TO WORK EXCEPT WITH JDBC TJDS DRIVER
     # server = 'busche-sql'
-    # database = 'sps'
-    # username = 'sa'
-    # password = 'sps12345'   
+    database = 'sps'
+    username = 'sa'
+    password = 'sps12345'   
     # # driver= 'ODBC Driver 17 for SQL Server'
     # driver= '{ODBC Driver 17 for SQL Server}'
 
-    # with pyodbc.connect('DSN=plt6;UID='+username+';PWD='+ password+ ';DATABASE=sps') as conn:
+    with pyodbc.connect('DSN=plt6;UID='+username+';PWD='+ password+ ';DATABASE=sps') as conn:
     # with pyodbc.connect('DSN=cm4;UID='+username+';PWD='+ password + ';DATABASE=cribmaster') as conn:
     # with pyodbc.connect('DRIVER='+driver+';SERVER=tcp:'+server+';PORT=1433;DATABASE='+database+';UID='+username+';PWD='+ password) as conn:
-        # with conn.cursor() as cursor:
-        #     cursor.execute("select '1' as one '2' as two;")
-        #     res = cursor.fetchall()
-        #     if res:
-        #         print(str(res))  # Should print [(1,)]
+        with conn.cursor() as cursor:
+            cursor.execute("select '1' as one '2' as two;")
+            res = cursor.fetchall()
+            if res:
+                print(str(res))  # Should print [(1,)]
 
 
             # row = cursor.fetchone()

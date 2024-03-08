@@ -1,6 +1,12 @@
+# Desktop install process
 
 sign in to office.com to get github password. EAxejwisiakJip3
-sudo snap install curl
+
+## you may have to reinstall curl
+
+sudo snap remove curl
+sudo apt install curl
+
 sudo apt install build-essential
 git
 chrome

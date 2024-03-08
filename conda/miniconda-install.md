@@ -14,7 +14,7 @@ curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh > Min
 bash Miniconda3-latest-Linux-x86_64.sh
 
 # Optional test installing conda environment.  Warning this takes a long time.
-cd ~/src/linux-utils/conda
+cd ~/src/repsys/linux/conda
 conda env create -f env-reports.yml
 
 ```
