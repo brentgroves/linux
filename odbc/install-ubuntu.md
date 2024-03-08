@@ -124,6 +124,7 @@ cd ~/src/repsys/linux/odbc
 python odbc-dsn-plextest.py
 3675
 
+# did not get cm-connect.py to work
 ```
 
 ## Some notes

@@ -38,10 +38,10 @@ email
 ksh
 odbc
 
-# I don't think I need an older version for because I don't install a local version of mongodb and conda can install an older ssl if needed for pysoap
+<!-- # I don't think I need an older version for because I don't install a local version of mongodb and conda can install an older ssl if needed for pysoap -->
 
-ssl -- older ssl for mongodb and pysoap.
-openssl
+<!-- ssl -- older ssl for mongodb and pysoap. -->
+<!-- openssl -->
 ssh
 mysql client
 mkdir -p ~/backups/db

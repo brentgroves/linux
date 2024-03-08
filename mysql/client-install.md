@@ -19,6 +19,12 @@ mysql_config_editor set --login-path=client --host=frt-ubu --port=31008 --user=r
 mysql -u root -p -h 10.1.0.118 --port=31008
 mysql -u root -p -h 172.20.88.61 --port=30031
 
+## login issue
+
+If you are using the conda reports environment it has openssl 1.1 which wont work
+conda activate base
+openssl version  
+
 # MySQL Shell
 
 <https://dev.mysql.com/doc/mysql-shell/8.0/en/>
@@ -39,16 +45,18 @@ Install the downloaded release package with the following command, replacing ver
 
 ```bash
 
-sudo dpkg -i ~/Downloads/mysql-apt-config_0.8.26-1_all.deb
+sudo dpkg -i ~/Downloads/mysql-apt-config_0.8.29-1_all.deb
 Note that the same package works on all supported Debian and Ubuntu platforms.
 
 Update the MySQL APT repository configuration package with the following command:
 sudo apt-get install mysql-apt-config
-sudo apt-get remove mysql-apt-config
 
 When asked in the dialogue box to configure the repository, make sure you choose MySQL 8.0 as the release series you want.
+# you wont install the server but it has to be configured
 
 Install MySQL Shell with this command:
 sudo apt-get install mysql-shell
+
+sudo apt-get remove mysql-apt-config
 
 ```

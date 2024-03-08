@@ -1,3 +1,4 @@
+```bash
 sudo apt update
 sudo apt -y install default-jdk
 https://pq.hosting/en/help/instructions/407-ustanovka-dbeaver-v-ubuntu-2204.html
@@ -48,3 +49,16 @@ dbeaver-ce:
         500 https://dbeaver.io/debs/dbeaver-ce  Packages
         100 /var/lib/dpkg/status
 https://computingforgeeks.com/install-and-configure-dbeaver-on-ubuntu-debian/
+```
+
+## setup repo
+
+```bash
+cd ~/src
+git clone git@github.com:brentgroves/mobexsql
+# launch dbeaver and create a mobexsql project pointing to this dir
+# create a time off and trial balance project
+/home/brent/src/repsys/volumes/sql/time_off
+/home/brent/src/repsys/volumes/sql/trial_balance
+
+```
