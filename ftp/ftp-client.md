@@ -1,5 +1,8 @@
-https://linuxopsys.com/topics/lftp-commands
+# ftp client
 
+<https://linuxopsys.com/topics/lftp-commands>
+
+```bash
 sudo apt-get update && sudo apt-get install lftp
 
 # make sure you can write to the server
@@ -49,3 +52,4 @@ lftp miki@192.168.122.65:~> pget ubuntu-16.04.1-server-amd64.iso
 # Mirroring from the server to the local directory
 We earlier show how to do the opposite, now we use mirror command to get data pulled from the server
 mirror
+```
