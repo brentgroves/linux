@@ -1,5 +1,23 @@
 # Install Ubuntu 22.04 Server
 
+## Network config
+
+Before starting installation from a computer on the network determine the network gateway and fill out the network table below.
+
+### Find network gateway
+```bash
+route -n | grep 'UG[ \t]' | awk '{print $2}'
+```
+
+### Fill out network table
+```bash
+Name: rephub11
+ip: 192.168.1.200
+gateway:192.168.1.1
+subnet: 255.255.255.0
+cidr: 192.168.1.0/24
+```
+
 Follow these instructions to **[install Ubuntu 22.04 server](https://ostechnix.com/install-ubuntu-server/)**
 When given the choice on additional packages to install only choose SSH.
 
