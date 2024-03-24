@@ -5,6 +5,7 @@ sudo apt-get install nmap -y
 
 Once the installation completes, you are ready to scan your LAN with nmap. To find out what addresses are in use, issue the command:
 
+nmap -sP 192.168.1.0/24
 nmap -sP 172.20.88.0/22
 nmap -sP 10.1.0.0/22
 nmap 172.20.88.115

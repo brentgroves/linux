@@ -1,3 +1,10 @@
+# What is my dns address
+
+```bash
+nmcli device show <interfacename> | grep IP4.DNS
+nmcli device show enp0s25 | grep IP4.DNS
+
+```
 Hello,
 Please consider the following request to make reporting easier from Microsoft Teams.
 A Power BI report hosted on Microsoft Teams needs a public endpoint to connect to our internal data warehouses to work. We can make this connection more secure by having the public and private keys to the TLS certificate for mobexglobal.com. Both the TLS public and private keys would be added to our k8s Nginx ingress controllers in order to perform TLS termination before passing the network traffic to the data warehouses. In order to make this work we also need port forwarding to the following k8s nodes hosting MySQL databases:
