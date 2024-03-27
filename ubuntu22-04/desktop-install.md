@@ -56,7 +56,8 @@ sudo apt install build-essential
 <!-- ssl -- older ssl for mongodb and pysoap. -->
 <!-- openssl -->
 - **[ssh](../ssh/ssh.md)**
-- **[mysql client](../mysql/mysql-client.md)
+- **[mysql client](../mysql/mysql-client.md)**
+
 mkdir -p ~/backups/db
 dbeaver
 soapui
