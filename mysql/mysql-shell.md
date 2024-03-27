@@ -22,17 +22,16 @@ Install the downloaded release package with the following command, replacing ver
 
 ```bash
 cd ~/Downloads
- curl -LO https://dev.mysql.com/get/mysql-apt-config_0.8.28-1_all.deb
-sudo dpkg -i ~/Downloads/mysql-apt-config_0.8.28-1_all.deb
-Note that the same package works on all supported Debian and Ubuntu platforms. Only select the tools not the server.
+curl -LO https://dev.mysql.com/get/mysql-apt-config_0.8.29-1_all.deb
+sudo dpkg -i ~/Downloads/mysql-apt-config_0.8.29-1_all.deb
+#Note that the same package works on all supported Debian and Ubuntu platforms. Only select the tools not the server.
 
-
-Update the MySQL APT repository configuration package with the following command:
+# Update the MySQL APT repository configuration package with the following command:
 sudo apt-get install mysql-apt-config
 
-When asked in the dialogue box to configure the repository, make sure you choose MySQL 8.0 as the release series you want.
+# When asked in the dialogue box to configure the repository, make sure you choose MySQL 8.0 as the release series you want.
 
-Install MySQL Shell with this command:
+# Install MySQL Shell with this command:
 sudo apt-get install mysql-shell
 
 # If you get the error 
@@ -41,4 +40,9 @@ sudo apt-get install mysql-shell
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B7B3B788A8D3785C
 
 sudo gpg --recv-keys B7B3B788A8D3785C
+
+# remove config
+
+sudo apt-get remove mysql-apt-config
+
 ```
