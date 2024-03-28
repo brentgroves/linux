@@ -1,43 +1,34 @@
+# qnap
 
-MG-ENG-NAS
-TS-453-U-RP
-https://www.qnap.com/en-us/product/ts-453u-rp
-The TS-453U-RP, featuring the easy-to-use QTS operating system, is a powerful, reliable, secure and scalable NAS solution designed for mission-intensive business applications and to meet fast growing data storage needs. The TS-453U-RP supports SATA 6Gb/s drives and delivers high performance with persistent throughput, providing a comprehensive storage solution for SMBs to build a reliable private cloud.
-Volume/LUN
-DataVol1
-Static Volume
-/
-MG-ENG-NAS
-TS-453U-RP
+**[qnap](../../../../../../../media/brent/KINGSTON/secrets/computers_vms_nas/qnap.md)**
 
-https://172.20.1.34
-TW9iZXhHbG9iYWxOQVMyMDIyIQ==
-smb://172.20.1.34
-netmask needs updated
-admin/
-MobexGlobalNAS2022!
-https://support.zadarastorage.com/hc/en-us/articles/213024986-How-to-Mount-a-SMB-Share-in-Ubuntu
-
-This tip provides the necessary steps to mount a VPSA SMB share using Ubuntu. 
-
-Step 1: Install the CIFS Utils pkg
-
-sudo apt-get install cifs-utils
-
-Step 2: Create a mount point
-
-sudo mkdir /mnt/local_share
-
-Step 3: Mount the volume
-
-sudo mount -t cifs -o user=admin //172.20.1.34/home /mnt/local_share
-
-sudo mount -t cifs //<vpsa_ip_address>/<export_share> /mnt/<local_share>
-
-
-
+## references
 
 https://en.wikipedia.org/wiki/Server_Message_Block
+
+## **[mount qnap](https://support.zadarastorage.com/hc/en-us/articles/213024986-How-to-Mount-a-SMB-Share-in-Ubuntu)**
+
+This tip provides the necessary steps to mount a VPSA SMB share using Ubuntu. 
+Step 1: Install the CIFS Utils pkg
+sudo apt-get install cifs-utils
+Step 2: Create a mount point
+sudo mkdir /mnt/local_share
+Step 3: Mount the volume
+
+```bash
+sudo mount -t cifs //<vpsa_ip_address>/<export_share> /mnt/<local_share>
+
+# example
+sudo mount -t cifs -o user=admin //172.20.1.34/home /mnt/local_share
+
+# host name from ip
+host 172.20.1.34
+34.1.20.172.in-addr.arpa domain name pointer qnap-avi.
+
+sudo mount -t cifs -o user=admin //172.20.1.34/home /mnt/qnap-avi
+```
+
+## One qnap spec
 
 Hot-swappable redundant power supplies to ensure maximum system uptime
 Manage, share, and back up business data with Real-time Remote Replication (RTRR)
@@ -48,7 +39,8 @@ Enhanced data security with high-performance AES 256-bit encryption and anti-vir
 Use the TS-453U-RP as a PC with exclusive QvPC Technology
 Run multiple Windows/Linux/Android-based virtual machines with the Virtualization Station
 
-https://www.trentonsystems.com/blog/jbod-vs-raid-what-are-the-differences
+**[jbod vs raid[(https://www.trentonsystems.com/blog/jbod-vs-raid-what-are-the-differences)**
+
 External RAID Enclosure
 A QNAP external RAID enclosure is a flexible dual-mode storage device with RAID protection. In NAS storage mode, the enclosure can be used as an expansion unit to increase NAS storage. In external storage mode, the enclosure appears as a USB disk and can be used to transfer data between NAS devices, PCs, and Mac computers.
 To configure an external RAID enclosure go to "Disks/VJBOD", select the enclosure, and then select "Action" > "Configure". After configuring RAID, you can format each external RAID group as a virtual disk or use it to create NAS storage space
@@ -114,7 +106,13 @@ For example, RAID 0 uses striping only, which fragments data onto the drives in 
 
 24 U.2 NVMe SSDs JBOD Server
 
-Photo: A Trenton Systems NVME JBOD Enclosure. Note the 24 individual NVME solid-state drives. This JBOD is perfect for programs and applications that need tons of storage and super fast read and write speeds.
+Photo: A Trenhttps://172.20.1.34
+MobexGlobalNAS2022!
+ALBION-QNAP
+http://10.1.2.32
+admin
+Bu$ch3QN@P
+Bu$ch3QN@Pton Systems NVME JBOD Enclosure. Note the 24 individual NVME solid-state drives. This JBOD is perfect for programs and applications that need tons of storage and super fast read and write speeds.
 
 Like RAID, JBOD enclosures can make use of both hard disk drives and solid-state drives of varying storage capacities and interfaces, including lightning-fast NVME SSDs, which Trenton Systems uses in its JBOD enclosures.
 
@@ -126,10 +124,3 @@ Shutting down an entire system for drive replacement increases organizational do
 
 In mission-critical programs and applications, significant downtime and decreased productivity may have catastrophic consequences, such as financial loss, public outcry, serious injury and even death.
 
-https://172.20.1.34
-MobexGlobalNAS2022!
-ALBION-QNAP
-http://10.1.2.32
-admin
-Bu$ch3QN@P
-Bu$ch3QN@P

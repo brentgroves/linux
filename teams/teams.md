@@ -26,7 +26,6 @@ You can confirm the changes by running the following command again.
 echo $XDG_SESSION_TYPE
 If you correctly change the conf file, it will show you display x11.
 
-sudo dpkg --remove teams
 I don't know which way to install is best
 https://technoracle.com/how-to-install-microsoft-teams-on-ubuntu-22-04/
 I am going to try the snap method on ubuntu 22.04
