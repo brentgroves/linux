@@ -6,7 +6,7 @@
 # <https://github.com/AppImage/AppImageKit/wiki/FUSE>
 sudo add-apt-repository universe
 
-sudo apt-get install build-essential xclip libfuse2 xsel
+sudo apt install build-essential xclip libfuse2 xsel
 
 # Needed for copy/paste to system clipboard using “+y in nvim
 # Neovim

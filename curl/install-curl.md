@@ -2,14 +2,23 @@
 
 This might already be installed but if you need a newer version then remove apt installed version and install from snap store or conda.
 
+```bash
 sudo apt install curl
+```
 
 ## Install from snap store
 
+This installation of **[curl](https://stackoverflow.com/questions/67541374/nvm-getting-permission-denied-with-nvm-install-command)**
+ maybe newer but it has problems installing nvm and maybe homebrew.
+
+```bash
 sudo snap install curl
+
+```
 
 ## Install from conda
 
+```bash
 conda install -c conda-forge curl
 The following NEW packages will be INSTALLED:
 
@@ -41,3 +50,4 @@ curl 7.82.0 (x86_64-conda-linux-gnu) libcurl/7.82.0 OpenSSL/1.1.1n zlib/1.2.12 l
 Release-Date: 2022-03-05
 Protocols: dict file ftp ftps gopher gophers http https imap imaps mqtt pop3 pop3s rtsp scp sftp smb smbs smtp smtps telnet tftp
 Features: alt-svc AsynchDNS GSS-API HSTS HTTP2 HTTPS-proxy IPv6 Kerberos Largefile libz NTLM NTLM_WB SPNEGO SSL TLS-SRP UnixSockets
+```

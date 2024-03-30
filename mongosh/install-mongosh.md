@@ -14,7 +14,7 @@ wget -qO- https://www.mongodb.org/static/pgp/server-7.0.asc | sudo tee /etc/apt/
 # Create the /etc/apt/sources.list.d/mongodb-org-7.0.list file for Ubuntu 22.04 (Jammy):
 echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
 
-sudo apt-get update
+sudo apt update
 # noticed there are different openssl library version options
 # If we want to use our PKI we might want to install the version that uses our system openssl.
 
@@ -22,7 +22,7 @@ sudo apt-get update
 
 # To install the latest stable version of mongosh with the included OpenSSL libraries:
 
-sudo apt-get install -y mongodb-mongosh
+sudo apt install -y mongodb-mongosh
 mongosh --version
 
 ```

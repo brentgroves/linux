@@ -27,12 +27,12 @@ sudo dpkg -i ~/Downloads/mysql-apt-config_0.8.29-1_all.deb
 #Note that the same package works on all supported Debian and Ubuntu platforms. Only select the tools not the server.
 
 # Update the MySQL APT repository configuration package with the following command:
-sudo apt-get install mysql-apt-config
-
-# When asked in the dialogue box to configure the repository, make sure you choose MySQL 8.0 as the release series you want.
+# When asked in the dialogue box to configure the repository, make sure you choose MySQL 8.0 as the release series you want. This does not install the MySQL 8.0 server but it must me selected.
+sudo apt install mysql-apt-config
+sudo apt update
 
 # Install MySQL Shell with this command:
-sudo apt-get install mysql-shell
+sudo apt install mysql-shell
 
 # If you get the error 
 # Err:4 http://repo.mysql.com/apt/ubuntu jammy InRelease

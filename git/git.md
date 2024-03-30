@@ -33,7 +33,6 @@ git config --global user.email "kyoung@mobexglobal.com"
 git config --global user.email "brent.groves@gmail.com"
 git config --global core.editor "nano"
 
-cp *.sh ~/
 
 ```
 

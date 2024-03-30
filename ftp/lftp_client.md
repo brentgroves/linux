@@ -1,9 +1,8 @@
-# ftp client
+# **[lftp client](https://linuxopsys.com/topics/lftp-commands)**
 
-<https://linuxopsys.com/topics/lftp-commands>
 
 ```bash
-sudo apt-get update && sudo apt-get install lftp
+sudo apt update -y && sudo apt install lftp -y
 
 # make sure you can write to the server
 ssh brent@avi-ubu

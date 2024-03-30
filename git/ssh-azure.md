@@ -10,7 +10,7 @@ Note you must have admin permissions to Azure Dev Ops project to do this.
 
 ```bash
 mkdir ~/.ssh
-nvim ~/.ssh/config
+vi ~/.ssh/config
 Host ssh.dev.azure.com
     User git
     PubkeyAcceptedAlgorithms +ssh-rsa
@@ -56,8 +56,8 @@ cat ~/.ssh/id_rsa.pub
 
 
 mkdir ~/src
-git clone git@ssh.dev.azure.com:v3/MobexGlobal/MobexCloudPlatform/mobexsql
-git clone git@ssh.dev.azure.com:v3/MobexGlobal/MobexCloudPlatform/Reporting
+git clone git@ssh.dev.azure.com:v3/MobexGlobal/MobexCloudPlatform/send_email_python
+cd send_email_python
 git remote –v
 
 <https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes>

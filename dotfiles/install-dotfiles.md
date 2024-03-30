@@ -49,7 +49,7 @@ sudo apt install fzf
 ```bash
 cd ~
 git clone git@github.com:brentgroves/dotfiles.git
-sudo apt-get install zsh-antigen neofetch fzf fonts-powerline
+sudo apt install zsh-antigen neofetch fzf fonts-powerline
 # do not install tmux or nvim now
 cd ~/dotfiles
 ./deploy

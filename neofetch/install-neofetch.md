@@ -1,5 +1,5 @@
 # Install neofetch
 
 ```bash
-sudo apt-get install neofetch
+sudo apt install neofetch
 ```

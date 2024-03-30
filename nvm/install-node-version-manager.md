@@ -1,5 +1,12 @@
 # Install Node version manager
 
+## remove nvm
+
+```bash
+to remove, delete, or uninstall nvm - just remove the `$NVM_DIR` folder (usually `~/.nvm`)
+
+```
+
 - nvm (Node Version Manager) is a tool that allows you to download and install Node.js. Check if you have it installed via nvm --version.
 - To install or update nvm, you should run the install script. To do that, you may either download and run the script manually, or use the following cURL or Wget command:
 
