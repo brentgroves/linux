@@ -1,6 +1,6 @@
 # install with apt
 
-This might already be installed but if you need a newer version then remove apt installed version and install from snap store or conda.
+This might already be installed but as of now 3/31/2024 this is the install method to choose because of issues with the snap install method.
 
 ```bash
 sudo apt install curl

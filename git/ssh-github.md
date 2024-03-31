@@ -52,7 +52,7 @@ cat ~/.ssh/id_ed25519.pub
 # Paste your key into the "Key" field. 
 # https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection 
 
-cd ~
+cd ~/src
 git clone git@github.com:brentgroves/dotfiles.git
 
 ```

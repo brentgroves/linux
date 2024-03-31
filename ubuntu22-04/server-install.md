@@ -27,11 +27,11 @@ route -n | grep 'UG[ \t]' | awk '{print $2}'
 ### Fill out network table
 ```bash
 Name: rephub11
-ip: 192.168.1.200
+ip: 192.168.1.201
 dns:192.168.1.1
 gateway:192.168.1.1
 subnet: 255.255.255.0
-cidr: 192.168.1.0/24
+cidr: 192.168.1.0 /24
 ```
 
 Now you can use these network setting during the installation process. If you don't do this and instead opt to use dhcp you can follow the below step to setup a static IP after the installation process is finished. 
@@ -85,7 +85,7 @@ sudo apt update -yq | sudo apt upgrade -yq
 ```bash
 sudo apt install build-essential -y
 ```
-- **[Install FTP server](../ftp/ftp-server.md)**
+- **[Install FTP server](../ftp/vsftpd-server.md)**
 - FTP shell_scripts to server
 ```bash
 # Reverse mirroring of directory
