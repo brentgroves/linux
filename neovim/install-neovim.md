@@ -32,10 +32,11 @@ echo 'so /home/brent/dotfiles/nvim/init.vim' > ~/.config/nvim/init.vim
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Start nvim you will see errors.
+nvim
 :checkhealth
 :PlugInstall
 # install could take a while but be patient it is hard to tell that it is actually installing stuff.
-# Rerun nvim
+nvim
 :checkhealth
 # Everything ok now.
 

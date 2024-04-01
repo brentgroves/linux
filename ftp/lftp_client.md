@@ -1,16 +1,19 @@
 # **[lftp client](https://linuxopsys.com/topics/lftp-commands)**
 
 
+## copy shell scripts to server
+
 ```bash
 sudo apt update -y && sudo apt install lftp -y
 
-# make sure you can write to the server
-ssh brent@avi-ubu
-sudo sed -i.orig 's/#write_enable=YES/write_enable=YES/g' /etc/vsftpd.conf
-sudo systemctl restart vsftpd.service
-
 # connect 
-lftp brent@avi-ubu
+cd ~/src/repsys/shell_scripts
+
+# Reverse mirroring of directory
+# Mirror the entire directory to the server, we will use reverse mirror command.
+lftp brent@rephub12:~> mirror -R
+# The shell scripts are now in the servers /home/$USER directory
+
 
 # mirror
 mirror -c source_dir target_dir

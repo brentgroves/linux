@@ -86,14 +86,7 @@ sudo apt update -yq | sudo apt upgrade -yq
 sudo apt install build-essential -y
 ```
 - **[Install FTP server](../ftp/vsftpd-server.md)**
-- FTP shell_scripts to server
-```bash
-# Reverse mirroring of directory
-# Mirro the entire directory to the server, we will use reverse mirror command.
-lftp brent@reports24:~> mirror -R
-# The shell scripts are now in the servers /home/$USER directory
-```
-- **[Install FTP client](../ftp/ftp-client.md)**
+- **[Install FTP client](../ftp/lftp_client.md)**
 - **[Install curl](./../curl/install-curl.md)**
 - **[Install git](../git/git.md)** 
 - Update **[/etc/hosts file](../hosts/hosts.md)**
@@ -103,7 +96,7 @@ lftp brent@reports24:~> mirror -R
 - **[Install Node version manager](../nvm/install-node-version-manager.md)** - Note Node version manager needs to be installed for each user.
 - **[Install Neofetch](../neofetch/install-neofetch.md)**
 - **[Install Linux HomeBrew](../homebrew/homebrew-install.md)**
-- **[Install dotfiles](../dotfiles/install-dotfiles.md)**
+- **[Install dotfiles](../dotfiles/ins  tall-dotfiles.md)**
 - **[Install NeoVim](../neovim/install-neovim.md)**
 - **[Install MySQL Shell](../mysql/mysql-shell.md)**
 - **[Install mongosh](../mongosh/install-mongosh.md)**

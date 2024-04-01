@@ -34,10 +34,11 @@ eval "$(fzf --zsh)"
 the error happened when we ran "fzf --zsh" so I did the following
 
 ```bash
-sudo apt uninstall fzf
+sudo apt remove fzf
 rm -rf ~/.fzf
 rm ~/.fzf.zsh
 sudo apt install fzf
+
 # left fzf reference in .zshrc alone "[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh"
 
 ```
