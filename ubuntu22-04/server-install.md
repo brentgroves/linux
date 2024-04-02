@@ -37,33 +37,9 @@ cidr: 192.168.1.0 /24
 Now you can use these network setting during the installation process. If you don't do this and instead opt to use dhcp you can follow the below step to setup a static IP after the installation process is finished. 
 
 
-### create netplan yaml
+### create **[netplan yaml](../ip/static_ip.md)**
 
-Only needed if you did not configure a static IP during the install. 
-```yaml
-network:
- version: 2
- renderer: NetworkManager
- ethernets:
-   enp0s25:
-     dhcp4: no
-     addresses: [192.168.1.200/24]
-     gateway4: 192.168.1.1
-     nameservers:
-         addresses: [192.168.1.1]
-```
-
-network:
-  ethernets:
-    enp0s25:
-      dhcp4: true
-  version: 2
   
-### create the netplan file
-
-```bash
-sudo vi /etc/netplan/00-installer-config.yaml
-```
 
 Follow these instructions to **[install Ubuntu 22.04 server](https://ostechnix.com/install-ubuntu-server/)**
 When given the choice on additional packages to install only choose SSH.
