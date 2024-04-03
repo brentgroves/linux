@@ -5,6 +5,7 @@
 <https://phoenixnap.com/kb/install-ftp-server-on-ubuntu-vsftpd>
 
 ## **[no public key authentication](https://www.jscape.com/blog/setting-up-sftp-public-key-authentication-command-line)**
+
 You can't set up public key authentication with vsftpd - you are getting confused between FTPs and SFTP which are two different protocols.
 
 To use public key authentication for SFTP it is just a matter of installing your public key on the server, as you would for ssh as detailed here - <http://www.noah.org/wiki/SSH_public_keys>
@@ -24,6 +25,7 @@ sudo systemctl enable vsftpd
 ssh brent@avi-ubu
 sudo sed -i.orig 's/#write_enable=YES/write_enable=YES/g' /etc/vsftpd.conf
 sudo systemctl restart vsftpd.service
+sudo systemctl status vsftpd 
 
 # you dont need to add a user if you have a login to the destination system.
 sudo useradd -m testuser 
