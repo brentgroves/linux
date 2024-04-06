@@ -56,5 +56,4 @@ cd ~/src
 git clone git@github.com:brentgroves/dotfiles.git
 
 ```
-
-## **[install repsys](./freshstart.sh)**
+You can now run the freshstart.sh and freshstart-old.sh shell_scripts you ftp'd earlier.

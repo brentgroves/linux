@@ -13,7 +13,7 @@ You could also skip this and install the mysql-shell which is more advanced.
 ## install mysql client only
 
 ```bash
-sudo apt-get install mysql-client
+sudo apt install mysql-client
 ```
 
 ## configure defaults

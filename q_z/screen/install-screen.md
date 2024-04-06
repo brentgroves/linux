@@ -3,7 +3,7 @@
 Note: I think this comes installed with Ubuntu 22.04 server.  
 
 ```bash
-sudo apt-get install screen
+sudo apt install screen
 
 # some test commands 
 # create named session

@@ -6,12 +6,13 @@
 ```bash
 sudo apt update -y && sudo apt install lftp -y
 
-# connect 
+# From dev system 
 cd ~/src/repsys/shell_scripts
 
 # Reverse mirroring of directory
 # Mirror the entire directory to the server, we will use reverse mirror command.
-lftp brent@rephub12:~> mirror -R
+lftp brent@rephub12
+:~> mirror -R
 # The shell scripts are now in the servers /home/$USER directory
 
 

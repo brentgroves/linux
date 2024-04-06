@@ -58,7 +58,7 @@ network:
   ethernets:
     enp0s25:
       addresses:
-        - 192.168.1.200/24
+        - 192.168.1.61/24
       routes:
         - to: default
           via: 192.168.1.1

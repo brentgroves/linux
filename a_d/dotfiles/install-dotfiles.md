@@ -1,6 +1,8 @@
 # Install dotfiles
 
-## new error
+## new error 
+
+You can fix error as shown below or just not install fzf until after dotfiles are deployed.
 
 ```bash
 # old .fzf.zsh works
@@ -50,7 +52,9 @@ sudo apt install fzf
 ```bash
 cd ~
 git clone git@github.com:brentgroves/dotfiles.git
-sudo apt install zsh-antigen neofetch fzf fonts-powerline
+# took out fzf because of error 
+sudo apt install zsh-antigen neofetch fonts-powerline
+# sudo apt install zsh-antigen neofetch fzf fonts-powerline
 # do not install tmux or nvim now
 cd ~/dotfiles
 ./deploy
@@ -70,4 +74,7 @@ You should now see the prompt from the robbyrussel theme.
 5. vi ~/dotfiles/zsh/.antigenrc
 6. Comment out the robbyrussel theme in ~/dotfiles/zsh/.antigenrc and uncomment the agnoster  theme.
 7. Reopen command prompt   
+
+# wait until now to install fzf. it is referenced in dotfiles
+sudo apt install fzf 
 ```
