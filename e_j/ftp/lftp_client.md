@@ -4,17 +4,21 @@
 ## copy shell scripts to server
 
 ```bash
-sudo apt update -y && sudo apt install lftp -y
-
 # From dev system 
 cd ~/src/repsys/shell_scripts
 
-# Reverse mirroring of directory
-# Mirror the entire directory to the server, we will use reverse mirror command.
+# upload files to server
 lftp brent@rephub12
-:~> mirror -R
+:~> mput *.sh
+exit
 # The shell scripts are now in the servers /home/$USER directory
 
+cd ~/src/repsys/k8s/kubectl/all-config-files
+# upload kube config files to server .config dir
+lftp brent@rephub12
+:~> cd .kube
+:~> mput *.sh
+```
 
 # mirror
 mirror -c source_dir target_dir
