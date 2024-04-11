@@ -21,13 +21,13 @@ sudo apt update -yq | sudo apt upgrade -yq
 code /media/brent/KINGSTON/secrets/hosts/repsys11.md
 ```
 
-## install basic packages
+## install prereqs and basic packages
 
 ```bash
 # you may have to reinstall curl
 sudo snap remove curl
 sudo apt install curl
-sudo apt install build-essential
+sudo apt install build-essential libnss3-tools
 ```
 
 ## **[update with home or work hosts file](../e_j/hosts/)**
@@ -59,21 +59,21 @@ sudo apt install build-essential
 - **[ssh](../q_z/ssh/ssh.md)**
 - **[mysql client](../k_p/mysql/mysql-client.md)**
 - **[dbeaver](../a_d/dbeaver/dbeaver.md)**
-soapui
-meld
-ghex
-postman
-gnome system monitor - System monitor was already installed on ubuntu 22.04
-<!-- teams  -->
-docker
-sudo apt install libnss3-tools
-microk8s
-kubectl
-deploy mysql
-restore mysql database from most recent backup
-java
-ant
-utils
-mongosh
-studio-3t
-azure_cli
+- **[soapui](../q_z/soapui/soapui_install.md)**
+- **[meld](../k_p/meld/meld_install.md)**
+- **[ghex](../e_j/ghex/ghex_install.md)**
+- **[postman](../k_p/postman/postman.md)**
+<!-- gnome system monitor - System monitor was already installed on ubuntu 22.04 -->
+<!-- teams standalone app not supported in Linux use web app teams.microsoft.com/v2 instead  -->
+- **[docker](../a_d/docker/install.md)**
+- **[microk8s](../../k8s/microk8s_1.28_install.md)**
+- **[kubectl](../../k8s/kubectl-install.md)**
+- **[mysql client](../k_p/mysql/mysql-client.md)**
+- **[mysql shell](../k_p/mysql/mysql-shell.md)**
+- **[java](../e_j/java/java.md)**
+- **[ant](../a_d/ant/ant.md)**
+- **[Free Pascal](../k_p/pascal/free_pascal-install.md)**
+- **[utils](../q_z/utils/utils-install.md)**
+- **[mongosh](../k_p/mongosh/install-mongosh.md)**
+- **[studio-3t](../q_z/studio-3t/studio-3t-intall.md)**
+- **[azure_cli](../a_d/azure/azure_cli.md)**

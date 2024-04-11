@@ -1,9 +1,17 @@
+# Java JRE and OpenJDK 111 install
+
 thank you Father for this beautiful day.
 go to jdbc-test for an ETL example.
 
-https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-22-04
+## references
+
+<https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-22-04>
+
+## Install Java JRE and OpenJDK 11
 
 Execute the following command to install the JRE from OpenJDK 11:
+
+```bash
 
 sudo apt install default-jre
 The JRE will allow you to run almost all Java software.
@@ -11,9 +19,6 @@ The JRE will allow you to run almost all Java software.
 Verify the installation with:
 
 java -version
-You’ll receive output similar to the following:
-
-Output
 openjdk version "11.0.14" 2022-01-18
 OpenJDK Runtime Environment (build 11.0.14+9-Ubuntu-0ubuntu2)
 OpenJDK 64-Bit Server VM (build 11.0.14+9-Ubuntu-0ubuntu2, mixed mode, sharing)
@@ -81,3 +86,4 @@ https://howtodoinjava.com/java/basics/java-classpath/
 # jar files in this path will be accessible to all programs
 export CLASSPATH=/usr/lib/jvm/ext/*.jar
 
+```

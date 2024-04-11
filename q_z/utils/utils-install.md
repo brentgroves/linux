@@ -1,10 +1,13 @@
-sudo apt-get install -yq \
+# Useful Utilities
+
+```bash
+sudo apt install -yq \
   software-properties-common \
-  curl \
   wget \
   dnsutils \
   iputils-ping \
   netcat \
   tree \
-  jq
- 
+  jq \
+  nmap
+```

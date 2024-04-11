@@ -8,12 +8,13 @@
 ## **[download free pascal](https://sourceforge.net/projects/freepascal/files/latest/download)**
 
 ```bash
-# Don't use did not work
+# Don't use did not work!!!
 sudo apt install fp-compiler-3.2.2
 ```
 
 ```bash
 cd ~/Downloads
+curl -LO https://sourceforge.net/projects/freepascal/files/latest/download
 tar -xvf fpc-3.2.0-x86_64-linux.tar 
 cd fpc-3.2.0-x86_64-linux
 ./install.sh

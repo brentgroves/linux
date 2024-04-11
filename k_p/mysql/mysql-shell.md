@@ -29,9 +29,7 @@ sudo dpkg -i ~/Downloads/mysql-apt-config_0.8.29-1_all.deb
 # Update the MySQL APT repository configuration package with the following command:
 # When asked in the dialogue box to configure the repository, make sure you choose MySQL 8.0 as the release series you want. This does not install the MySQL 8.0 server but it must me selected.
 sudo apt install mysql-apt-config
-sudo apt update
-
-# Install MySQL Shell with this command:
+sudo apt update 
 sudo apt install mysql-shell
 
 # If you get the error 
@@ -43,6 +41,6 @@ sudo gpg --recv-keys B7B3B788A8D3785C
 
 # remove config
 
-sudo apt-get remove mysql-apt-config
+sudo apt remove mysql-apt-config
 
 ```
