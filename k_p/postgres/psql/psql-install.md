@@ -5,16 +5,15 @@
 Enable PostgreSQL Package Repository
 PostgreSQL 15 package is not available in the default package repository, so enable its official package repository using following commands.
 
-$ sudo sh -c 'echo "deb [arch=amd64] http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
-$ wget -qO- <https://www.postgresql.org/media/keys/ACCC4CF8.asc> | sudo tee /etc/apt/trusted.gpg.d/pgdg.asc &>/dev/null
+```bash
+sudo sh -c 'echo "deb [arch=amd64] http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+wget -qO- https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo tee /etc/apt/trusted.gpg.d/pgdg.asc &>/dev/null
 sudo apt update
 
 sudo apt install postgresql-client -y
 psql --version
 
 <https://askubuntu.com/questions/1040765/how-to-install-psql-without-postgres>
-sudo apt-get install -y postgresql-client
-psql --version
 
 dsn="database=hkp host=/var/run/postgresql port=5432 sslmode=disable"
 
