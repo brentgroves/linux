@@ -10,15 +10,22 @@
 sudo apt update -yq | sudo apt upgrade -yq
 ```
 
-## Connect to new host remotely
-
-- **[Install xrdp server](../q_z/xrdp/xrdp.md)**
-- Connect to new host from dev system using remmina
-- If not already done update host network setting using its network config file
+## Install SSH and XRDP servers
 
 ```bash
 # Insert USB drive used for secrets.
-code /media/brent/KINGSTON/secrets/hosts/repsys11.md
+# install ssh server
+vi /media/brent/KINGSTON/ssh/ssh.md
+# install xrdp server
+vi /media/brent/KINGSTON/xrdp/xrdp.md
+```
+
+## Connect to new host remotely
+
+```bash
+# ssh to new host
+ssh brent@repsys13
+# xrdp to new host
 ```
 
 ## install prereqs and basic packages
@@ -36,11 +43,12 @@ sudo apt install build-essential libnss3-tools
 
 - **[chrome](../a_d/chrome/install.md)**
 - **[git](../e_j/git/git.md)**
+- **[vsftpd server](../q_z/vsftpd/vsftpd-server.md)**
+- **[lftp client](../k_p/lftp/lftp_client.md)**
+- **[shell scripts](../../shell_scripts/install_shell_scripts.md)**
 <!-- **[pass](../pass/pass.md)**  -->
 - **[code](../a_d/code/code.md)**
 - **[screen](../q_z/screen/install-screen.md)**
-- **[ftp server](../e_j/ftp/ftp-server.md)**
-- **[ftp client](../e_j/ftp/ftp-client.md)**
 - **[miniconda](../a_d/conda/miniconda-install.md)**
 - **[neofetch](../k_p/neofetch/install-neofetch.md)**
 - **[homebrew](../e_j/homebrew/homebrew-install.md)** Needed for k9s because its snap dont work.
