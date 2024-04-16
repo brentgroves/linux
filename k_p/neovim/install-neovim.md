@@ -35,6 +35,8 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.g
 nvim
 :checkhealth
 :PlugInstall
+# getting this error now when running pluginstall
+x Post-update hook for vim-prettier ... Exit status: 1
 # install could take a while but be patient it is hard to tell that it is actually installing stuff.
 nvim
 :checkhealth

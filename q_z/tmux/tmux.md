@@ -8,7 +8,7 @@ On ubuntu 22.04
 
 ```bash
 
-sudo apt-get install libncurses5-dev libncursesw5-dev libevent-dev
+sudo apt-get install libncurses5-dev libncursesw5-dev libevent-dev ncurses-dev 
 
 cd ~/Downloads
 -L means follow the redirects
@@ -21,7 +21,7 @@ curl -LO https://sourceforge.net/projects/tmux.mirror/files/3.3/tmux-3.3.tar.gz
 #  -f, --file=ARCHIVE         use archive file or device ARCHIVE
 # tar --help | grep -- "-f"
 
-sudo apt-get install ncurses-dev
+sudo apt install ncurses-dev 
 sudo apt install libevent-dev
 tar -zxf tmux-*.tar.gz
 cd tmux-*/

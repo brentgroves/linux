@@ -56,9 +56,11 @@ sudo apt install build-essential libnss3-tools
 - **[nvm](../k_p/nvm/install-node-version-manager.md)**
 - **[neovim](../k_p/neovim/install-neovim.md)**
 - **[tmux](../q_z/tmux/tmux.md)**
-- **[remmina](../q_z/remmina/install.md)**
+- **[remmina](../q_z/remmina/remmina_install.md)**
 <!-- cron -- this is already installed on ubuntu 22.04 -->
 <!-- email - check in reports docker file was part of pipeline  -->
+START HERE FOR REPSYS13 INSTALL
+
 - **[ksh](../k_p/ksh/ksh.md)**
 - **[odbc](../k_p/odbc/install-ubuntu.md)**
 <!-- # I don't think I need an older version for because I don't install a local version of mongodb and conda can install an older ssl if needed for pysoap -->
