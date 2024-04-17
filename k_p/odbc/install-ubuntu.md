@@ -33,7 +33,7 @@ DEBIAN_FRONTEND=noninteractive ACCEPT_EULA=Y sudo apt-get install -y msodbcsql18
 DEBIAN_FRONTEND=noninteractive ACCEPT_EULA=Y sudo apt-get install -y mssql-tools18
 sudo apt install -y unixodbc-dev
 
-verify if unixODBC is installed
+# verify if unixODBC is installed
 which odbcinst
 which isql
 
@@ -41,7 +41,7 @@ which isql
 # echo 'export PATH="$PATH:/opt/mssql-tools18/bin"' >> ~/.bashrc
 # source ~/.bashrc
 
-cd ~/src/repsys/linux/odbc
+cd ~/src/repsys/linux/k_p/odbc
 # Dont need to extract driver
 # tar -xf PROGRESS_DATADIRECT_OPENACCESS_OAODBC_8.1.0.HOTFIX_LINUX_64.tar
 # install ksh already installed in 22.04 desktop
