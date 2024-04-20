@@ -5,8 +5,10 @@ import pyodbc
 # server = 'localhost\sqlexpress' # for a named instance
 # server = 'myserver,port' # to specify an alternate port
 # MSSQLTest
-username = 'mg.odbcalbion' 
-password = 'Mob3xalbion' 
+username = 'mg.odbcalbion'
+# set password from ~/src/secrets/namespaces/default/credentials.yaml 
+
+password = '' 
 cnxn = pyodbc.connect('DSN=PlexTest;UID='+username+';PWD='+ password)
 # cnxn = pyodbc.connect( 
 #     driver='{ODBC Driver 17 for SQL Server}', 

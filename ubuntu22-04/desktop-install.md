@@ -60,14 +60,13 @@ sudo apt install build-essential libnss3-tools
 <!-- cron -- this is already installed on ubuntu 22.04 -->
 <!-- email - check in reports docker file was part of pipeline  -->
 - **[ksh](../k_p/ksh/ksh_install.md)**
-
-START HERE FOR REPSYS13 add plex secrets to kingston
-
 - **[odbc](../k_p/odbc/install-ubuntu.md)**
 <!-- # I don't think I need an older version for because I don't install a local version of mongodb and conda can install an older ssl if needed for pysoap -->
 <!-- ssl -- older ssl for mongodb and pysoap. -->
 <!-- openssl -->
-- **[ssh](../q_z/ssh/ssh.md)**
+<!-- - **[ssh client](../q_z/ssh/ssh-client.md)** should already be installed-->
+START HERE FOR REPSYS13
+
 - **[mysql client](../k_p/mysql/mysql-client.md)**
 - **[dbeaver](../a_d/dbeaver/dbeaver.md)**
 - **[soapui](../q_z/soapui/soapui_install.md)**

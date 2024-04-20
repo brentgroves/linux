@@ -15,7 +15,7 @@ sudo vi /etc/ssl/openssl.cnf
 
 # <https://docs.microsoft.com/en-us/sql/connect/odbc/linux-mac/installing-the-microsoft-odbc-driver-for-sql-server?view=sql-server-ver16>
 
-sudo apt update
+sudo apt update -y | sudo apt upgrade -y
 sudo apt install build-essential -y
 sudo su
 curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
@@ -77,7 +77,7 @@ The product installation has completed successfully.
 # exit out of root.
 exit
 # then update the /etc/odbc.ini and /usr/oaodbc81/odbc64.ini files with what is stored in the ETL-Pod dockerfile
-cd ~/src/repsys/linux/odbc
+cd ~/src/repsys/linux/k_p/odbc
 sudo cp ./odbc.ini /etc/
 cat /etc/odbc.ini
 # odbc64.ini already had stuff in it but i deleted it and copied the file in this directory
@@ -105,12 +105,12 @@ cat /usr/oaodbc81/odbc64.ini
 # SQLLEN Size........: 8
 # SQLSETPOSIROW Size.: 8
 
-cd ~/src/repsys/linux/conda
+cd ~/src/repsys/linux/a_d/conda
 conda env create -f env-reports.yml
 conda activate reports
 # pyodbc issue
 # when running:python odbc-dsn-plextest.py from
-# /home/brent/src/repsys/odbc
+# /home/brent/src/repsys/k_p/odbc
 # would get a segmentation fault when using pyodbc installed with conda
 # to fix the issue i ran: conda remove pyodbc
 # then checked pip list:
@@ -119,10 +119,11 @@ conda activate reports
 conda remove pyodbc
 pip install pyodbc
 # Successfully installed pyodbc-5.1.0
-cd ~/src/repsys/linux/odbc
-# verify connection is ok.  
+cd ~/src/repsys/linux/k_p/odbc
+# verify connection is ok. 
+# update password from ~/src/secrets/namespaces/default/credentials.yaml 
 python odbc-dsn-plextest.py
-3675
+3691/3675
 
 # did not get cm-connect.py to work
 ```
