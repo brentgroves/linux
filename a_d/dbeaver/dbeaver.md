@@ -19,9 +19,8 @@ OpenJDK 64-Bit Server VM (build 11.0.18+10-post-Ubuntu-0ubuntu120.04.1, mixed mo
 # You can use PPA repository to easily install/upgrade DBeaver on Debian Linuxes. Mostly it is the same as regular Debian repo but it is hosted on Launchpad.
 
 sudo add-apt-repository ppa:serge-rider/dbeaver-ce
-sudo apt-get update
 # install will upgrade
-sudo apt-get install dbeaver-ce
+sudo apt install dbeaver-ce
 
 # another way to install dbeaver
 sudo  wget -O /usr/share/keyrings/dbeaver.gpg.key https://dbeaver.io/debs/dbeaver.gpg.key

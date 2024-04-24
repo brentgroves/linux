@@ -28,7 +28,8 @@ sudo dpkg -i ~/Downloads/mysql-apt-config_0.8.29-1_all.deb
 
 # Update the MySQL APT repository configuration package with the following command:
 # When asked in the dialogue box to configure the repository, make sure you choose MySQL 8.0 as the release series you want. This does not install the MySQL 8.0 server but it must me selected.
-sudo apt install mysql-apt-config
+# sudo apt install mysql-apt-config
+# mysql-apt-config is already the newest version (0.8.29-1).
 sudo apt update 
 sudo apt install mysql-shell
 

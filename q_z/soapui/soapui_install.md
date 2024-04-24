@@ -4,7 +4,7 @@
 
 ```bash
 # install needed package
-sudo apt-get install libcanberra-gtk-module
+sudo apt install libcanberra-gtk-module
 
 # Installation
 # Download the install script from http://www.soapui.org/

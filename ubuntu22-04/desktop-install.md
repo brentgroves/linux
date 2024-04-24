@@ -65,22 +65,24 @@ sudo apt install build-essential libnss3-tools
 <!-- ssl -- older ssl for mongodb and pysoap. -->
 <!-- openssl -->
 <!-- - **[ssh client](../q_z/ssh/ssh-client.md)** should already be installed-->
-START HERE FOR REPSYS13
 
+- **[redis client](../q_z/redis/redis_client_install.md)**
 - **[mysql client](../k_p/mysql/mysql-client.md)**
+- **[mysql shell](../k_p/mysql/mysql-shell.md)**
+- **[postgres client](../k_p/postgres/psql/psql-install.md)**
 - **[dbeaver](../a_d/dbeaver/dbeaver.md)**
 - **[soapui](../q_z/soapui/soapui_install.md)**
 - **[meld](../k_p/meld/meld_install.md)**
 - **[ghex](../e_j/ghex/ghex_install.md)**
-- **[postman](../k_p/postman/postman.md)**
+- **[postman](../k_p/postman/postman-install.md)**
 <!-- gnome system monitor - System monitor was already installed on ubuntu 22.04 -->
 <!-- teams standalone app not supported in Linux use web app teams.microsoft.com/v2 instead  -->
 - **[docker](../a_d/docker/install.md)**
 - **[microk8s](../../k8s/microk8s_1.28_install.md)**
 - **[kubectl](../../k8s/kubectl-install.md)**
-- **[mysql client](../k_p/mysql/mysql-client.md)**
-- **[mysql shell](../k_p/mysql/mysql-shell.md)**
 - **[java](../e_j/java/java.md)**
+START HERE FOR REPSYS13
+
 - **[ant](../a_d/ant/ant.md)**
 - **[Free Pascal](../k_p/pascal/free_pascal-install.md)**
 - **[utils](../q_z/utils/utils-install.md)**

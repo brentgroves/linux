@@ -3,6 +3,8 @@
 thank you Father for this beautiful day.
 go to jdbc-test for an ETL example.
 
+This should have already been installed if you installed dbeaver-ce.
+
 ## references
 
 <https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-22-04>
