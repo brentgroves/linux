@@ -49,7 +49,7 @@ sudo apt install build-essential libnss3-tools
 - **[git](../e_j/git/git.md)**
 - **[vsftpd server](../q_z/vsftpd/vsftpd-server.md)**
 - **[lftp client](../k_p/lftp/lftp_client.md)**
-- **[shell scripts](../../shell_scripts/install_shell_scripts.md)**
+- **[shell scripts](../../volumes/shell_scripts/install_shell_scripts.md)**
 <!-- **[pass](../pass/pass.md)**  -->
 - **[code](../a_d/code/code.md)**
 - **[screen](../q_z/screen/install-screen.md)**
