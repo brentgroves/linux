@@ -1,4 +1,8 @@
-# Install Ubuntu 22.04 Server
+---
+title: Ubuntu 22.04 Server Installation
+markmap:
+  colorFreezeLevel: 2
+---
 
 - **[Network Config](./network_config.md)**
 - **[Install Ubuntu 22.04 server](https://ostechnix.com/install-ubuntu-server/)**

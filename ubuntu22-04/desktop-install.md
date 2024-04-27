@@ -1,4 +1,8 @@
-# Ubuntu desktop Installation
+---
+title: Ubuntu desktop Installation
+markmap:
+  colorFreezeLevel: 2
+---
 
 ## **[Create Network Config file](./network_config.md)**
 
