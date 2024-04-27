@@ -6,6 +6,7 @@ It is a fairly common need but has a slightly convoluted procedure. To remove a 
 Delete the relevant line from the .gitmodules file.
 Delete the relevant section from .git/config.
 Run git rm --cached path_to_submodule (no trailing slash).
+git rm --cached git
 git rm --cached volume/go/create-go-module/filter_main
 git rm --cached volume/go/tutorials/sub_lib
 git rm --cached volume/go/tutorials/sub_main
