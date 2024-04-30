@@ -20,3 +20,4 @@ sudo chmod +x studio-3t-linux-x64.sh
 # Installation requires a studio 3t account. I used my google account for IAM.
 ./studio-3t-linux-x64.sh
 mongodb://adminuser:password123@reports31:30331/databaseName?authSource=admin
+```
