@@ -4,6 +4,9 @@ markmap:
   colorFreezeLevel: 2
 ---
 
+**[Back Setup Dev System](../../development/report_system/setup_dev_system/setup_dev_system.md)**\
+**[Back to Main](../../README.md)**
+
 ## **[Create Network Config file](./network_config.md)**
 
 ## **[Install Ubuntu Desktop](https://ubuntu.com/tutorials/install-ubuntu-desktop)**
