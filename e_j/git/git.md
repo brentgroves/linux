@@ -1,5 +1,9 @@
 # Install git
 
+**[Ubuntu 22.04 Desktop](../../ubuntu22-04/desktop-install.md)**\
+**[Ubuntu 22.04 Server](../../ubuntu22-04/server-install.md)**\
+**[Back to Main](../../../README.md)**
+
 <https://linuxhint.com/install-git-ubuntu22-04/>
 
 ```bash

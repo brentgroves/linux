@@ -45,17 +45,18 @@ sudo apt install build-essential libnss3-tools
 
 ## install applications
 
+- Update **[/etc/hosts file](../e_j/hosts/)**
 - **[chrome](../a_d/chrome/install.md)**
 - **[git](../e_j/git/git.md)**
 - **[vsftpd server](../q_z/vsftpd/vsftpd-server.md)**
 - **[lftp client](../k_p/lftp/lftp_client.md)**
 - **[shell scripts](../../volumes/shell_scripts/install_shell_scripts.md)**
 <!-- **[pass](../pass/pass.md)**  -->
-- **[code](../a_d/code/code.md)**
+- **[code](../a_d/code/code.md)**df
 - **[screen](../q_z/screen/install-screen.md)**
 - **[miniconda](../a_d/conda/miniconda-install.md)**
 - **[neofetch](../k_p/neofetch/install-neofetch.md)**
-- **[homebrew](../e_j/homebrew/homebrew-install.md)** Needed for k9s because its snap dont work.
+- **[homebrew](../e_j/homebrew/homebrew-install.md)**
 - **[dotfiles](../a_d/dotfiles/install-dotfiles.md)**
 - **[nvm](../k_p/nvm/install-node-version-manager.md)**
 - **[neovim](../k_p/neovim/install-neovim.md)**
@@ -85,8 +86,6 @@ sudo apt install build-essential libnss3-tools
 - **[microk8s](../../k8s/microk8s_1.28_install.md)**
 - **[kubectl](../../k8s/kubectl-install.md)**
 - **[java](../e_j/java/java.md)**
-START HERE FOR REPSYS13
-
 - **[ant](../a_d/ant/ant-install.md)**
 - **[Free Pascal](../k_p/pascal/free_pascal-install.md)**
 - **[utils](../q_z/utils/utils-install.md)**

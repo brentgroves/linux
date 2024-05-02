@@ -1,10 +1,17 @@
+# docker install
+
+**[Ubuntu 22.04 Desktop](../../ubuntu22-04/desktop-install.md)**\
+**[Ubuntu 22.04 Server](../../ubuntu22-04/server-install.md)**\
+**[Back to Main](../../../README.md)**
+
+## refererences
 https://docs.docker.com/engine/install/ubuntu/
 # remove old versions
 https://docs.docker.com/engine/install/ubuntu/#uninstall-docker-engine
 
+```bash
 # stop the service
 sudo service docker stop
-
 # Uninstall the Docker Engine, CLI, Containerd, and Docker Compose packages:
 sudo apt-get purge docker-ce docker-ce-cli containerd.io docker-compose-plugin docker-engine docker docker.io containerd runc docker-ce-rootless-extras docker-scan-plugin
 
@@ -12,7 +19,7 @@ sudo apt-get purge docker-ce docker-ce-cli containerd.io docker-compose-plugin d
 dpkg -l | grep -i docker
 
 # Delete Remaining Files
-Run the following commands to delete all images, containers, volumes, user created configuration files. Do this only if you are sure you don’t need to use Docker again. Otherwise, if you re-install Docker, you will not be able to access these files.
+# Run the following commands to delete all images, containers, volumes, user created configuration files. Do this only if you are sure you don’t need to use Docker again. Otherwise, if you re-install Docker, you will not be able to access these files.
 
 sudo rm -rf /var/lib/docker /etc/docker
 sudo rm /etc/apparmor.d/docker
@@ -23,28 +30,24 @@ sudo rm -rf ~/.docker
 sudo groupdel docker
 
 # reboot system 
-This is a must
+# This is a must
 sudo reboot
 
 # Set up the repository
-Update the apt package index and install packages to allow apt to use a repository over HTTPS:
+#Update the apt package index and install packages to allow apt to use a repository over HTTPS:
 
 sudo apt-get update
 sudo apt-get install ca-certificates curl gnupg
 https://docs.docker.com/engine/install/ubuntu/
 # Add Docker’s official GPG key:
-Add Docker's official GPG key:
-
-content_copy
+# Add Docker's official GPG key:
 sudo install -m 0755 -d /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 sudo chmod a+r /etc/apt/keyrings/docker.gpg
 
 # Use the following command to set up the repository:
 echo \
-  "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
-  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
-  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
 # make sure it is from docker.com and not ubuntu.com
 sudo apt-get update
@@ -138,3 +141,4 @@ Save and close the file.
 
 # build and run
 docker compose up
+```

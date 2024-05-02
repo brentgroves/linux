@@ -1,5 +1,9 @@
 # Install psql
 
+**[Ubuntu 22.04 Desktop](../../../ubuntu22-04/desktop-install.md)**\
+**[Ubuntu 22.04 Server](../../../ubuntu22-04/server-install.md)**\
+**[Back to Main](../../../../README.md)**
+
 <https://www.linuxtechi.com/how-to-install-postgresql-on-ubuntu/>
 
 Enable PostgreSQL Package Repository

@@ -1,5 +1,9 @@
 # Install Visual Studio Code
 
+**[Ubuntu 22.04 Desktop](../../ubuntu22-04/desktop-install.md)**\
+**[Ubuntu 22.04 Server](../../ubuntu22-04/server-install.md)**\
+**[Back to Main](../../../README.md)**
+
 <https://code.visualstudio.com/docs/setup/linux>
 
 Debian and Ubuntu based distributions#

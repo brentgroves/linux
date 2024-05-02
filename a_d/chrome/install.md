@@ -1,5 +1,9 @@
 # Install Chrome
 
+**[Ubuntu 22.04 Desktop](../../ubuntu22-04/desktop-install.md)**\
+**[Ubuntu 22.04 Server](../../ubuntu22-04/server-install.md)**\
+**[Back to Main](../../../README.md)**
+
 <https://linuxconfig.org/how-to-install-google-chrome-web-browser-on-ubuntu-22-04-jammy-jellyfish>
 
 ```bash

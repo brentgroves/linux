@@ -1,5 +1,9 @@
 # Install TMUX
 
+**[Ubuntu 22.04 Desktop](../../ubuntu22-04/desktop-install.md)**\
+**[Ubuntu 22.04 Server](../../ubuntu22-04/server-install.md)**\
+**[Back to Main](../../../README.md)**
+
 Build and install it. Don’t use apt install tmux
 <https://github.com/tmux/tmux/wiki/Installing>
 On ubuntu 22.04

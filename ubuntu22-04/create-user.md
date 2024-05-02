@@ -1,5 +1,9 @@
 # Create user with sudo privileges
 
+**[Ubuntu 22.04 Desktop](../ubuntu22-04/desktop-install.md)**\
+**[Ubuntu 22.04 Server](../ubuntu22-04/server-install.md)**\
+**[Back to Main](../../README.md)**
+
 <https://docs.rackspace.com/docs/create-a-sudo-user-in-ubuntu>
 
 This article describes how to grant sudo access to a new or existing user on the Ubuntu® operating system.

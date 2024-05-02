@@ -1,5 +1,9 @@
 # Java JRE and OpenJDK 111 install
 
+**[Ubuntu 22.04 Desktop](../../ubuntu22-04/desktop-install.md)**\
+**[Ubuntu 22.04 Server](../../ubuntu22-04/server-install.md)**\
+**[Back to Main](../../../README.md)**
+
 thank you Father for this beautiful day.
 go to jdbc-test for an ETL example.
 

@@ -1,5 +1,9 @@
 # Remmina Install
 
+**[Ubuntu 22.04 Desktop](../../ubuntu22-04/desktop-install.md)**\
+**[Ubuntu 22.04 Server](../../ubuntu22-04/server-install.md)**\
+**[Back to Main](../../../README.md)**
+
 ## references
 
 <https://www.how2shout.com/linux/4-ways-to-install-remmina-on-ubuntu-22-04-lts-jammy-jellyfish/>

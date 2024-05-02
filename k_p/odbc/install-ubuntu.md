@@ -1,5 +1,9 @@
 # ODBC Install
 
+**[Ubuntu 22.04 Desktop](../../ubuntu22-04/desktop-install.md)**\
+**[Ubuntu 22.04 Server](../../ubuntu22-04/server-install.md)**\
+**[Back to Main](../../../README.md)**
+
 ```bash
 # From a stackoverflow question:
 # "When SQL Server gets installed it is configured with a self-signed X.509 certificate. If you want to use encrypted connections (with Encrypt=yes; in the connection string, which is the default now) you'll either need to 1) get the X.509 certificate's public key from the server and add it to your trusted certificates store on the client or 2) use the TrustServerCertificate=yes; setting in your connection string."

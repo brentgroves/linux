@@ -1,5 +1,9 @@
 # soapui
 
+**[Ubuntu 22.04 Desktop](../../ubuntu22-04/desktop-install.md)**\
+**[Ubuntu 22.04 Server](../../ubuntu22-04/server-install.md)**\
+**[Back to Main](../../../README.md)**
+
 <https://www.soapui.org/getting-started/installing-soapui/installing-on-linux-or-unix/>
 
 ```bash

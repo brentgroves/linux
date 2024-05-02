@@ -1,5 +1,9 @@
 # install mysql client
 
+**[Ubuntu 22.04 Desktop](../../ubuntu22-04/desktop-install.md)**\
+**[Ubuntu 22.04 Server](../../ubuntu22-04/server-install.md)**\
+**[Back to Main](../../../README.md)**
+
 You could also skip this and install the mysql-shell which is more advanced.
 
 ## references

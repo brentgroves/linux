@@ -1,3 +1,9 @@
+# append to end of /etc/hosts file
+
+**[Ubuntu 22.04 Desktop](../../ubuntu22-04/desktop-install.md)**\
+**[Ubuntu 22.04 Server](../../ubuntu22-04/server-install.md)**\
+**[Back to Main](../../../README.md)**
+
 206.186.133.20  adfs.linamar.com
 10.254.61.51    linus.linamar.com
 10.1.0.125      repsys11

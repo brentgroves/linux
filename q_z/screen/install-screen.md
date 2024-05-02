@@ -1,5 +1,9 @@
 # Install screen
 
+**[Ubuntu 22.04 Desktop](../../ubuntu22-04/desktop-install.md)**\
+**[Ubuntu 22.04 Server](../../ubuntu22-04/server-install.md)**\
+**[Back to Main](../../../README.md)**
+
 Note: I think this comes installed with Ubuntu 22.04 server.  
 
 ```bash

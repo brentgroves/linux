@@ -1,5 +1,9 @@
 # **[dbeaver](https://pq.hosting/en/help/instructions/407-ustanovka-dbeaver-v-ubuntu-2204.html)**
 
+**[Ubuntu 22.04 Desktop](../../ubuntu22-04/desktop-install.md)**\
+**[Ubuntu 22.04 Server](../../ubuntu22-04/server-install.md)**\
+**[Back to Main](../../../README.md)**
+
 ## references
 
 <https://pq.hosting/en/help/instructions/407-ustanovka-dbeaver-v-ubuntu-2204.html>

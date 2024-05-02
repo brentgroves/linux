@@ -1,4 +1,9 @@
 # append to end of /etc/hosts file
+
+**[Ubuntu 22.04 Desktop](../../ubuntu22-04/desktop-install.md)**\
+**[Ubuntu 22.04 Server](../../ubuntu22-04/server-install.md)**\
+**[Back to Main](../../../README.md)**
+
 192.168.1.50	moto
 192.168.1.50	moto.busche-cnc.com
 192.168.1.50	devcon2.busche-cnc.com

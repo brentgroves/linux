@@ -1,5 +1,9 @@
 # Install dotfiles
 
+**[Ubuntu 22.04 Desktop](../../ubuntu22-04/desktop-install.md)**\
+**[Ubuntu 22.04 Server](../../ubuntu22-04/server-install.md)**\
+**[Back to Main](../../../README.md)**
+
 ## new error 
 
 You can fix error as shown below or just not install fzf until after dotfiles are deployed.

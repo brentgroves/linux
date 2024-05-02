@@ -1,5 +1,9 @@
 # **[Download the version](https://go.dev/dl/)** you want
 
+**[Ubuntu 22.04 Desktop](../../ubuntu22-04/desktop-install.md)**\
+**[Ubuntu 22.04 Server](../../ubuntu22-04/server-install.md)**\
+**[Back to Main](../../../README.md)**
+
 Did not install apt go at home and only installed 1 version and updated path in exports.sh to /usr/local/go/bin
 
 ## Remove previous version and install new version
