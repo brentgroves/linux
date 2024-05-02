@@ -1,8 +1,8 @@
----
-title: Ubuntu 22.04 Server Installation
-markmap:
-  colorFreezeLevel: 2
----
+# Ubuntu 22.04 Server Install
+
+**[Report System Install](../../k8s/report-system-install.md)**\
+**[Current Status](../../development/status/weekly/current_status.md)**\
+**[Back to Main](../../README.md)**
 
 - **[Network Config](./network_config.md)**
 - **[Install Ubuntu 22.04 server](https://ostechnix.com/install-ubuntu-server/)**
@@ -24,9 +24,9 @@ sudo apt update -yq | sudo apt upgrade -yq
 sudo apt install build-essential -y
 ```
 
-- **[Install FTP server](../e_j/ftp/vsftpd-server.md)**
-- **[Install FTP client](../e_j/ftp/lftp_client.md)**
-- **[Install Shell Scripts](../../shell_scripts/install_shell_scripts.md)**
+- **[Install FTP server](../q_z/vsftpd/vsftpd-server.md)**
+- **[Install FTP client](../k_p/lftp/lftp_client.md)**
+- **[Install Shell Scripts](../../volumes/shell_scripts/install_shell_scripts.md)**
 - **[Install curl](../a_d/curl/install-curl.md)**
 - **[Install git](../e_j/git/git.md)**
 - Update **[/etc/hosts file](../e_j/hosts/)**

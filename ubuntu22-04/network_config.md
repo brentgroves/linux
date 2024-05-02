@@ -1,5 +1,9 @@
 # Network config
 
+**[Ubuntu 22.04 Desktop Install](./desktop-install.md)**\
+**[Ubuntu 22.04 Server Install](./server-install.md)**\
+**[Back to Main](../../README.md)**\
+
 Before starting installation from a computer on the network determine the network gateway and fill out the network table below.
 
 ## Find the subnet

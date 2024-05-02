@@ -1,10 +1,7 @@
----
-title: Ubuntu desktop Installation
-markmap:
-  colorFreezeLevel: 2
----
+# Install Ubuntu 22.04 Desktop
 
-**[Back Setup Dev System](../../development/report_system/setup_dev_system/setup_dev_system.md)**\
+**[Setup Dev System](../../development/report_system/setup_dev_system/setup_dev_system.md)**\
+**[Current Status](../../development/status/weekly/current_status.md)**\
 **[Back to Main](../../README.md)**
 
 ## **[Create Network Config file](./network_config.md)**
