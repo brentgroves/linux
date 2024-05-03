@@ -39,3 +39,20 @@ Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter
 ```ext install bierner.markdown-mermaid```
 - **[Mermaid Markdown Syntax Highlighting](https://marketplace.visualstudio.com/items?itemName=bpruitt-goddard.mermaid-markdown-syntax-highlighting)**\
 ```ext install bpruitt-goddard.mermaid-markdown-syntax-highlighting```
+
+## **[Web Development](https://medium.com/@gautammanak1/10-must-have-vscode-extensions-for-web-development-44b0d129ae56)**
+
+- **[JavaScript Booster](https://marketplace.visualstudio.com/items?itemName=sburg.vscode-javascript-booster)**\
+```ext install sburg.vscode-javascript-booster```
+- **[ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)**\
+```ext install dbaeumer.vscode-eslint```
+- **[Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)**\
+```ext install ritwickdey.LiveServer```
+- **[CSS Peek](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek#:~:text=Peek%3A%20load%20the%20css%20file,the%20symbol%20(%20Ctrl%2Bhover%20))**\
+```ext install pranaygp.vscode-css-peek```
+- **[IntelliSense for CSS class names in HTML](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion)**\
+```ext install Zignd.html-css-class-completion```
+- **[JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)**
+```ext install xabikos.JavaScriptSnippets```
+- **[IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)**
+```ext install VisualStudioExptTeam.vscodeintellicode```
