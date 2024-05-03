@@ -39,3 +39,9 @@ sudo apt install code # or code-insiders
 ```
 
 ## **[Install Extensions](./extensions.md)**
+
+## **[Use VSCode for Web](./vscode_for_web.md)**
+
+You can use it for light-weight code changes and share links with others so they can view your code and documentation more easily.
+
+**[Visual Studio Code Web](https://github.dev/brentgroves/repsys/blob/main/development/status/weekly/current_status.md)**
