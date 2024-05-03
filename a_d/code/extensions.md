@@ -56,3 +56,5 @@ Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter
 ```ext install xabikos.JavaScriptSnippets```
 - **[IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)**
 ```ext install VisualStudioExptTeam.vscodeintellicode```
+- **[HTML Preview](https://marketplace.visualstudio.com/items?itemName=george-alisson.html-preview-vscode)**
+```ext install george-alisson.html-preview-vscode```
