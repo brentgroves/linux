@@ -33,6 +33,40 @@ Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter
         "editor.formatOnPaste": true
     },
 
+Issue: the markdown formatter was not running after save so I added
+You can open this file from VSCode's setting search by searching for "editor.codeActionsOnSave".
+
+```json
+    "editor.codeActionsOnSave": {
+      "source.fixAll.markdownlint": true
+    }
+
+```
+
+to the ~/home/brent/.config/Code/User/settings.json file.
+
+```json
+{
+    "workbench.colorTheme": "Default Dark+",
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+    "terminal.integrated.inheritEnv": false,
+    "debug.javascript.autoAttachFilter": "smart",
+    "remote.localPortHost": "allInterfaces",
+    "redhat.telemetry.enabled": true,
+    "window.zoomLevel": 0,
+    "go.toolsManagement.autoUpdate": true,
+    "workbench.editor.empty.hint": "hidden",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.markdownlint": true
+    }
+}
+```
+
 - **[Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf)**\
 ```ext install yzane.markdown-pdf```
 - **[Markdown Preview Mermaid](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid)**\
