@@ -8,13 +8,16 @@
 You can add a submodule to a repository like this:
 
 ```bash
-cd ~/src/reports
-git submodule add <git@ssh.dev.azure.com>:v3/MobexGlobal/MobexCloudPlatform/pki volume/pki
+cd ~/src/repsys
+git submodule add git@github.com:brentgroves/go_web_docker.git volumes/go/tutorials/docker/go_web_docker
+# volumes/go/tutorials/docker/go_web_docker is going to be a file containing the repo info
 git status
 git add -A
 git commit -m "added submodule"
 git push
 ```
+
+cp -a /go_web_docker2/. /go_web_docker/
 
 With default configuration, this will check out the code of the awesome_submodule.git repository to the path_to_awesome_submodule directory, and will add information to the main repository about this submodule, which contains the commit the submodule points to, which will be the current commit of the default branch (usually the master branch) at the time this command is executed.
 
