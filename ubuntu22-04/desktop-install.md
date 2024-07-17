@@ -92,3 +92,5 @@ sudo apt install build-essential libnss3-tools
 - **[mongosh](../k_p/mongosh/install-mongosh.md)**
 - **[studio-3t](../q_z/studio-3t/studio-3t-intall.md)**
 - **[azure_cli](../a_d/azure/azure_cli.md)**
+<!-- Only do this if you need to mount old qnap or a Windows drive -->
+- **[Mount Windows smb device](../q_z/smb/mount-smb.md)**
