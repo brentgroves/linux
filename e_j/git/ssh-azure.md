@@ -17,15 +17,18 @@ Host ssh.dev.azure.com
     HostkeyAlgorithms +ssh-rsa
 
 # generate an RSA key accept default with no passcode
-ssh-keygen -C "cstangland@mobexglobal.com"
-ssh-keygen -C "bcook@mobexglobal.com"
-ssh-keygen -C "jdavis@mobexglobal.com"
-ssh-keygen -C "bcieslik@mobexglobal.com"
-ssh-keygen -C "sjackson@mobexglobal.com"
-ssh-keygen -C "kyoung@mobexglobal.com"
-ssh-keygen -C "bgroves@mobexglobal.com"
-ssh-keygen -C "rdecker@linamar.com"
-ssh-keygen -C "bhall@linamar.com"
+
+ssh-keygen -t rsa -C "cstangland@mobexglobal.com"
+ssh-keygen -t rsa -C "bcook@mobexglobal.com"
+ssh-keygen -t rsa -C "jdavis@mobexglobal.com"
+ssh-keygen -t rsa -C "bcieslik@mobexglobal.com"
+ssh-keygen -t rsa -C "sjackson@mobexglobal.com"
+ssh-keygen -t rsa -C "kyoung@mobexglobal.com"
+ssh-keygen -t rsa -C "bgroves@mobexglobal.com"
+ssh-keygen -t rsa -C brent.groves@gmail.com 
+
+ssh-keygen -t rsa -C "rdecker@linamar.com"
+ssh-keygen -t rsa -C "bhall@linamar.com"
 
 # start the ssh-agent if not already started
 # We don't normally need to stop and start the ssh-agent on Ubuntu 22.04 desktop but on Ubuntu 22.04 server you may need to
