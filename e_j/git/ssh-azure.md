@@ -59,7 +59,7 @@ cat ~/.ssh/id_rsa.pub
 
 
 mkdir ~/src
-chdir ~src
+cd ~/src
 git clone git@ssh.dev.azure.com:v3/MobexGlobal/MobexCloudPlatform/send_email_python
 cd send_email_python
 git remote –v

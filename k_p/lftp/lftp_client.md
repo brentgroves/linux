@@ -8,23 +8,25 @@
 
 ```bash
 # From dev system 
-cd ~/src/repsys/shell_scripts
+cd ~/src/repsys/volumes/shell_scripts
 ssh brent@repsys12
 mkdir -p ~/bin/shell_scripts/
 chmod 755 ~/bin/shell_scripts/
 exit
 
 # upload shell scripts to server
-lftp brent@rephub12
+lftp brent@repsys12
 :~> cd ~/bin/shell_scripts #this is in dotfiles path
 :~> mput *.sh
 exit
+
+# copy kube config files to server
 ssh brent@repsys12
-chmod 755 ~/bin/shell_scripts/*
-# make kubectl directory
 mkdir ~/.kube
+chmod 766 ~/.kube
 exit
-cd ~/src/repsys/k8s/kubectl/all-config-files
+
+cd ~/src/k8s/all-config-files
 # upload kube config files to server .config dir
 lftp brent@repsys12
 :~> cd .kube

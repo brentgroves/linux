@@ -28,7 +28,6 @@ sudo apt install build-essential -y
 - **[Set static IP](../k_p/networkctl/network_settings.md)**
 - **[Install FTP server](../q_z/vsftpd/vsftpd-server.md)**
 - **[Install FTP client](../k_p/lftp/lftp_client.md)**
-- **[Install Shell Scripts](../../volumes/shell_scripts/install_shell_scripts.md)**
 - **[Install curl](../a_d/curl/install-curl.md)**
 - **[Install git](../e_j/git/git.md)**
 - Update **[/etc/hosts file](../e_j/hosts/)**
