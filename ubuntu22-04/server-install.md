@@ -33,7 +33,7 @@ sudo apt install build-essential -y
 - **[Install Screen](../q_z/screen/install-screen.md)**
 - **[Mount Windows smb device](../q_z/smb/mount-smb.md)** Only do this if you need to mount old qnap or a Windows drive
 - **[Install mini-conda](../a_d/conda/miniconda-install.md)** - Note miniconda needs to be installed for each user.
-- **[Install Node version manager](../k_p/nvm/install-node-version-manager.md)** - Note Node version manager needs to be installed for each user.
+- **[Install Node version manager](../k_p/nvm/install-node-version-manager.md)** - Note Node version manager needs to be installed for each user and should be installed for **[neovim issue](https://github.com/neoclide/coc.nvim/issues/856)**.
 - **[Install Neofetch](../k_p/neofetch/install-neofetch.md)**
 - **[Install Linux HomeBrew](../e_j/homebrew/homebrew-install.md)**
 - **[Install dotfiles](../a_d/dotfiles/install-dotfiles.md)**

@@ -30,6 +30,9 @@ sudo mv nvim /usr/local/bin
 mkdir -p ~/.config/nvim
 touch ~/.config/nvim/init.vim
 echo 'so /home/brent/dotfiles/nvim/init.vim' > ~/.config/nvim/init.vim
+# or if multipass vm
+echo 'so /home/ubuntu/dotfiles/nvim/init.vim' > ~/.config/nvim/init.vim
+
 # echo 'so ~/dotfiles/nvim/init.vim' > ~/.config/nvim/init.vim
 
 # -- Install vim plugin manager
@@ -48,5 +51,5 @@ nvim
 
 # <https://github.com/deoplete-plugins/deoplete-jedi/wiki/Setting-up-Python-for-Neovim>
 
-pip3 install --user neovim
+
 ```

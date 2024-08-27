@@ -4,7 +4,7 @@
 **[Ubuntu 22.04 Server](../../ubuntu22-04/server-install.md)**\
 **[Back to Main](../../../README.md)**
 
-## new error 
+## new error
 
 You can fix error as shown below or just not install fzf until after dotfiles are deployed.
 
@@ -65,6 +65,7 @@ cd ~/dotfiles
 # dont install tmux or vim now
 # restart terminal
 cd ~/dotfiles
+# Don't replace .zshrc unless you are using miniconda
 rm ~/.zshrc
 cp .zshrc-miniconda ~/.zshrc
 
