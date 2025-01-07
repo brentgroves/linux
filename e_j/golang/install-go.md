@@ -28,6 +28,7 @@ Note: To install using the method described here, you'll need to have git instal
 To install additional Go versions, run the **[go install](https://pkg.go.dev/cmd/go#hdr-Compile_and_install_packages_and_dependencies)** command, specifying the download location of the version you want to install.
 
 ```bash
+sudo apt-get install gcc-multilib
 # step 1 downloads the go installation program to ~/go/bin
 go install golang.org/dl/go1.21.0@latest
 # step 2 install the go version to the ~/sdk/go1.21.0 directory
