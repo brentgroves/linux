@@ -58,6 +58,7 @@ To install additional Go versions, run the **[go install](https://pkg.go.dev/cmd
 ```bash
 sudo apt-get install gcc-multilib
 # step 1 downloads the go installation program to ~/go/bin
+cd ~/go/bin
 go install golang.org/dl/go1.22.0@latest
 # Add ~/go/bin to path
 # step 2 install the go version to the ~/sdk/go1.22.0 directory
