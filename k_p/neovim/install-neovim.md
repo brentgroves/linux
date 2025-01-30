@@ -20,12 +20,8 @@ sudo apt install build-essential xclip libfuse2 xsel
 
 ```bash
 cd ~/Downloads
-curl -LO https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
-sudo install -m 755 nvim.appimage /usr/bin/nvim
-or
-mv nvim.appimage nvim
-chmod 755 nvim
-sudo mv nvim /usr/local/bin
+curl -LO https://github.com/neovim/neovim/releases/download/v0.10.4/nvim-linux-x86_64.appimage
+sudo install -m 755 nvim-linux-x86_64.appimage /usr/local/bin/nvim
 
 mkdir -p ~/.config/nvim
 touch ~/.config/nvim/init.vim

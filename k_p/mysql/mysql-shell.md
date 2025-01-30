@@ -26,8 +26,8 @@ Install the downloaded release package with the following command, replacing ver
 
 ```bash
 cd ~/Downloads
-curl -LO https://dev.mysql.com/get/mysql-apt-config_0.8.29-1_all.deb
-sudo dpkg -i ~/Downloads/mysql-apt-config_0.8.29-1_all.deb
+curl -LO https://dev.mysql.com/get/mysql-apt-config_0.8.33-1_all.deb
+sudo dpkg -i mysql-apt-config_0.8.33-1_all.deb
 #Note that the same package works on all supported Debian and Ubuntu platforms. Only select the tools not the server.
 
 # Update the MySQL APT repository configuration package with the following command:
