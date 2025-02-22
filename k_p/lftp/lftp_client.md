@@ -17,6 +17,7 @@ exit
 # upload shell scripts to server
 lftp brent@repsys12
 :~> cd ~/bin/shell_scripts #this is in dotfiles path
+:~> local ls
 :~> mput *.sh
 exit
 
