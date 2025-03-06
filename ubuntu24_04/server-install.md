@@ -25,7 +25,6 @@ sudo apt update -y && sudo apt upgrade -y
 sudo apt install build-essential -y
 ```
 
-- **[Set static IP](../k_p/networkctl/network_settings.md)**
 - **[Install FTP server](../q_z/vsftpd/vsftpd-server.md)**
 - **[Install FTP client](../k_p/lftp/lftp_client.md)**
 - **[Install curl](../a_d/curl/install-curl.md)**

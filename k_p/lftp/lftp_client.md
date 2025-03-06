@@ -4,6 +4,10 @@
 **[Ubuntu 22.04 Server](../../ubuntu22-04/server-install.md)**\
 **[Back to Main](../../../README.md)**
 
+```bash
+sudo apt install lftp
+```
+
 ## copy shell scripts to server
 
 ```bash

@@ -1,4 +1,4 @@
-## **[vsftpd server](https://phoenixnap.com/kb/install-ftp-server-on-ubuntu-vsftpd)**
+# **[vsftpd server](https://phoenixnap.com/kb/install-ftp-server-on-ubuntu-vsftpd)**
 
 **[Ubuntu 22.04 Desktop](../../ubuntu22-04/desktop-install.md)**\
 **[Ubuntu 22.04 Server](../../ubuntu22-04/server-install.md)**\
