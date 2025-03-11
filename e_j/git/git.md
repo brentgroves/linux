@@ -61,7 +61,23 @@ The server's certificate might not match the hostname you are trying to access.
 Network issues:
 In some cases, network issues like a proxy could interfere with certificate verification
 
+### **[add certificate to trust store](https://fabianlee.org/2019/01/28/git-client-error-server-certificate-verification-failed/)**
+
+```bash
+git clone https://github.com/barnybug/cli53
+Cloning into 'cli53'...
+fatal: unable to access 'https://github.com/barnybug/cli53/': server certificate verification failed. CAfile: none CRLfile: none
+
+# this reverts back to the original /etc/ssl/certs/ca-certificates.crt
+# sudo update-ca-certificates
+
+openssl s_client -showcerts -servername github.com -connect github.com:443 </dev/null 2>/dev/null | sed -n -e '/BEGIN\ CERTIFICATE/,/END\ CERTIFICATE/ p'  > github-com.pem
+cat github-com.pem | sudo tee -a /etc/ssl/certs/ca-certificates.crt
+```
+
 ### bypass ssl verification
+
+Not recommended
 
 ```bash
 ssh brent@10.188.50.202
@@ -86,61 +102,7 @@ git config --global --get http.sslverify
 
 
 git config --global http.sslverify false
-```
 
-### configure git to use local trust store
-
-<https://git-scm.com/docs/git-config>
-
-```bash
-2016: Make sure first that you have certificates installed on your Debian in /etc/ssl/certs.
-
-If not, reinstall them:
-
-sudo apt-get install --reinstall ca-certificates
-Since that package does not include root certificates, add:
-
-sudo update-ca-certificates
-Make sure your git does reference those CA:
-
-git config --global --get http.sslCAinfo
-
-git config --global http.sslCAinfo /etc/ssl/certs/ca-certificates.crt
-
-git config --global --get http.sslCAPath
-
-git config --global http.sslCAPath /etc/ssl/certs/
-
-http.sslCAPath
-
-Since that package does not include root certificates, add:
-
-sudo mkdir /usr/local/share/ca-certificates/cacert.org
-sudo wget -P ~/cacert.org http://www.cacert.org/certs/root.crt http://www.cacert.org/certs/class3.crt
-
-sudo wget -P /usr/local/share/ca-certificates/cacert.org http://www.cacert.org/certs/root.crt http://www.cacert.org/certs/class3.crt
-sudo update-ca-certificates
-Make sure your git does reference those CA:
-
-git config --global http.sslCAinfo /etc/ssl/certs/ca-certificates.crt
-
+git config --global --unset http.sslverify 
 
 ```
-
-http.sslVerify
-Whether to verify the SSL certificate when fetching or pushing over HTTPS. Defaults to true. Can be overridden by the GIT_SSL_NO_VERIFY environment variable.
-
-http.sslCert
-File containing the SSL certificate when fetching or pushing over HTTPS. Can be overridden by the GIT_SSL_CERT environment variable.
-
-http.sslKey
-File containing the SSL private key when fetching or pushing over HTTPS. Can be overridden by the GIT_SSL_KEY environment variable.
-
-http.sslCertPasswordProtected
-Enable Git’s password prompt for the SSL certificate. Otherwise OpenSSL will prompt the user, possibly many times, if the certificate or private key is encrypted. Can be overridden by the GIT_SSL_CERT_PASSWORD_PROTECTED environment variable.
-
-http.sslCAInfo
-File containing the certificates to verify the peer with when fetching or pushing over HTTPS. Can be overridden by the GIT_SSL_CAINFO environment variable.
-
-http.sslCAPath
-Path containing files with the CA certificates to verify the peer with when fetching or pushing over HTTPS. Can be overridden by the GIT_SSL_CAPATH environment variable.
