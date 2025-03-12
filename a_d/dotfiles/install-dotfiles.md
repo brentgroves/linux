@@ -56,6 +56,9 @@ sudo apt install fzf
 ```bash
 cd ~
 git clone git@github.com:brentgroves/dotfiles.git
+# or for read only access
+git clone https://github.com:brentgroves/dotfiles.git
+git clone https://github.com/brentgroves/dotfiles.git
 # took out fzf because of error 
 sudo apt install zsh-antigen neofetch fonts-powerline
 # sudo apt install zsh-antigen neofetch fzf fonts-powerline

@@ -54,5 +54,6 @@ cat ~/.ssh/id_ed25519.pub
 
 cd ~/
 git clone git@github.com:brentgroves/dotfiles.git
-
+# if ssh does not work you can still clone with https which does not have push capability unless user authenticates somehow.
+git clone https://github.com/brentgroves/dotfiles.git
 ```

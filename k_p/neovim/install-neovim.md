@@ -36,12 +36,26 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.g
 
 # Start nvim you will see errors.
 nvim
+# if error
+# AppImages require FUSE to run. 
+# You might still be able to extract the contents of this AppImage 
+# if you run it with the --appimage-extract option. 
+# See https://github.com/AppImage/AppImageKit/wiki/FUSE 
+
+sudo add-apt-repository universe
+sudo apt install libfuse2t64
+
 :checkhealth
 :PlugInstall
 # getting this error now when running pluginstall
 x Post-update hook for vim-prettier ... Exit status: 1
 # install could take a while but be patient it is hard to tell that it is actually installing stuff.
 nvim
+# needs fzf version 0.60.3 which is currently found in github
+sudo apt remove fzf
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+https://github.com/junegunn/fzf/blob/master/install
 :checkhealth
 # Everything ok now.
 

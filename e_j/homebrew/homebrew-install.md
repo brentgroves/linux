@@ -12,6 +12,7 @@
 <https://github.com/orgs/Homebrew/discussions/3396>
 
 ## you may have to reinstall curl
+
 The snap installation of **[curl](https://stackoverflow.com/questions/67541374/nvm-getting-permission-denied-with-nvm-install-command)**
  maybe newer but it has problems installing nvm and maybe homebrew.
 
@@ -20,5 +21,9 @@ The snap installation of **[curl](https://stackoverflow.com/questions/67541374/n
 sudo snap remove curl
 sudo apt install curl
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# or this works sometimes when the about does not or at least shows more detailed erros.
+curl -fsSL -o install.sh https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
+/bin/bash install.sh
 
 ```
