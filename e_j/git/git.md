@@ -4,6 +4,23 @@
 **[Ubuntu 22.04 Server](../../ubuntu22-04/server-install.md)**\
 **[Back to Main](../../../README.md)**
 
+## reference
+
+- **[diff between git@github.com and https://githbu.com](https://stackoverflow.com/questions/40659168/difference-between-gitgithub-com-and-https-github-com)**
+8
+
+git can operate on a variety of different protocols
+
+http(s) like <https://github.com/project/repo.git>
+
+It uses the port 443 (or 80 for http), it allows both read and write access, password for auth (like on github it allows anonymous read access but asks a paasword for write).and Firewall friendly (it does not require any infra configuration).
+
+ssh like <git@github.com>:project/repo.git
+
+It uses the port 22, it allows both read and write access, requires SSH Keys for auth so if you give git your public ssh key, your ssh protocol will use your private key for authentication with git, so you will not need to provide a username password.
+
+with SSH you will not be asked to provide your password each time you use the git push command as the ssh protocol will use you private key for authentication with the repository.
+
 <https://linuxhint.com/install-git-ubuntu22-04/>
 
 ```bash
