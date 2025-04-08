@@ -34,15 +34,12 @@ Prior to 0.5.0, uv was installed into ~/.cargo/bin. The binaries can be removed 
 
 ## Installation methods
 
-I did not do this method.
-
 ```bash
 Command 'uv' not found, but can be installed with:
 sudo snap install astral-uv
 ```
 
 Install uv with our standalone installers or your package manager of choice.
-This is what I did to install uv.
 
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
