@@ -68,9 +68,12 @@ cd ~/dotfiles
 # dont install tmux or vim now
 # restart terminal
 cd ~/dotfiles
-# Don't replace .zshrc unless you are using miniconda
+# If you are using miniconda
 rm ~/.zshrc
 cp .zshrc-miniconda ~/.zshrc
+# If you are using uv
+rm ~/.zshrc
+cp .zshrc-uv ~/.zshrc
 
 # logout and login
 If the prompt does not appear do the following:

@@ -14,15 +14,20 @@
 sudo apt update -yq | sudo apt upgrade -yq
 ```
 
-## Install SSH and XRDP servers
+## Copy from Seagate
 
 ```bash
-# Insert USB drive used for secrets.
-# install ssh server
-vi /media/brent/KINGSTON/ssh/ssh.md
-# install xrdp server
-vi /media/brent/KINGSTON/xrdp/xrdp.md
+mkdir -p ~/src
+# copy linux folder to ~/src directory
+# download vscode deb file
+# right click and install it with software center app.
+# open vscode installation markdown in vscode and finish the installation.
+
 ```
+## Install **[SSH](../q_z/ssh/ssh-server.md)** 
+
+## Install **[Gnome Remote Desktop](https://gitlab.gnome.org/GNOME/gnome-remote-desktop)** server
+
 
 ## Connect to new host remotely
 
@@ -55,6 +60,7 @@ sudo apt install build-essential libnss3-tools
 - **[code](../a_d/code/code.md)**df
 - **[screen](../q_z/screen/install-screen.md)**
 - **[miniconda](../a_d/conda/miniconda-install.md)**
+- **[uv](../k_p/python/uv/uv-install.md)**
 - **[neofetch](../k_p/neofetch/install-neofetch.md)**
 - **[homebrew](../e_j/homebrew/homebrew-install.md)**
 - **[dotfiles](../a_d/dotfiles/install-dotfiles.md)**
