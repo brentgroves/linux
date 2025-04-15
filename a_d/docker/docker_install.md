@@ -5,9 +5,12 @@
 **[Back to Main](../../../README.md)**
 
 ## refererences
-https://docs.docker.com/engine/install/ubuntu/
+
+<https://docs.docker.com/engine/install/ubuntu/>
+
 # remove old versions
-https://docs.docker.com/engine/install/ubuntu/#uninstall-docker-engine
+
+<https://docs.docker.com/engine/install/ubuntu/#uninstall-docker-engine>
 
 ```bash
 # stop the service
@@ -32,7 +35,21 @@ sudo groupdel docker
 # reboot system 
 # This is a must
 sudo reboot
+```
 
+## Prerequisites
+
+Firewall limitations
+Warning
+
+Before you install Docker, make sure you consider the following security implications and firewall incompatibilities.
+
+If you use ufw or firewalld to manage firewall settings, be aware that when you expose container ports using Docker, these ports bypass your firewall rules. For more information, refer to Docker and ufw.
+Docker is only compatible with iptables-nft and iptables-legacy. Firewall rules created with nft are not supported on a system with Docker installed. Make sure that any firewall rulesets you use are created with iptables or ip6tables, and that you add them to the DOCKER-USER chain, see Packet filtering and firewalls.
+
+## Install docker
+
+```bash
 # Set up the repository
 #Update the apt package index and install packages to allow apt to use a repository over HTTPS:
 
@@ -41,7 +58,6 @@ sudo apt-get install ca-certificates curl gnupg
 https://docs.docker.com/engine/install/ubuntu/
 # Add Docker’s official GPG key:
 # Add Docker's official GPG key:
-sudo install -m 0755 -d /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 sudo chmod a+r /etc/apt/keyrings/docker.gpg
 
