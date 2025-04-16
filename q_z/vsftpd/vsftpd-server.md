@@ -36,7 +36,7 @@ sudo systemctl status vsftpd
 sudo useradd -m testuser 
 sudo passwd testuser 
 sudo ftp reports22 
-
+U0R4r44P6I42tur
 #By default, the FTP server uses the /srv/ftp directory as the default directory. You can change this by creating a new directory and changing the FTP user home directory. 
 
 # To change the FTP home directory, enter the following: 
