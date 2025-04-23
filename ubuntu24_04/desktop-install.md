@@ -24,10 +24,10 @@ mkdir -p ~/src
 # open vscode installation markdown in vscode and finish the installation.
 
 ```
-## Install **[SSH](../q_z/ssh/ssh-server.md)** 
+
+## Install **[SSH](../q_z/ssh/ssh-server.md)**
 
 ## Install **[Gnome Remote Desktop](https://gitlab.gnome.org/GNOME/gnome-remote-desktop)** server
-
 
 ## Connect to new host remotely
 
@@ -63,8 +63,8 @@ sudo apt install build-essential libnss3-tools
 - **[uv](../k_p/python/uv/uv-install.md)**
 - **[neofetch](../k_p/neofetch/install-neofetch.md)**
 - **[homebrew](../e_j/homebrew/homebrew-install.md)**
-- **[dotfiles](../a_d/dotfiles/install-dotfiles.md)**
 - **[nvm](../k_p/nvm/install-node-version-manager.md)**
+- **[dotfiles](../a_d/dotfiles/install-dotfiles.md)**
 - **[neovim](../k_p/neovim/install-neovim.md)**
 - **[tmux](../q_z/tmux/tmux.md)**
 - **[remmina](../q_z/remmina/remmina_install.md)**
