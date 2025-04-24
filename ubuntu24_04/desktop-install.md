@@ -63,8 +63,8 @@ sudo apt install build-essential libnss3-tools
 - **[uv](../k_p/python/uv/uv-install.md)**
 - **[neofetch](../k_p/neofetch/install-neofetch.md)**
 - **[homebrew](../e_j/homebrew/homebrew-install.md)**
-- **[dotfiles](../a_d/dotfiles/install-dotfiles.md)**
 - **[nvm](../k_p/nvm/install-node-version-manager.md)**
+- **[dotfiles](../a_d/dotfiles/install-dotfiles.md)**
 - **[neovim](../k_p/neovim/install-neovim.md)**
 - **[tmux](../q_z/tmux/tmux.md)**
 - **[remmina](../q_z/remmina/remmina_install.md)**

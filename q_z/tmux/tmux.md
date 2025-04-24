@@ -12,7 +12,25 @@ On ubuntu 22.04
 
 ```bash
 
+# Try this next time
+# sudo apt-get install libncurses-dev  libevent-dev
+
 sudo apt-get install libncurses5-dev libncursesw5-dev libevent-dev ncurses-dev 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Note, selecting 'libncurses-dev' instead of 'libncurses5-dev'
+Note, selecting 'libncurses-dev' instead of 'libncursesw5-dev'
+Note, selecting 'libncurses-dev' instead of 'ncurses-dev'
+The following additional packages will be installed:
+  libevent-2.1-7t64 libevent-core-2.1-7t64 libevent-extra-2.1-7t64 libevent-openssl-2.1-7t64 libevent-pthreads-2.1-7t64
+Suggested packages:
+  ncurses-doc
+The following NEW packages will be installed:
+  libevent-2.1-7t64 libevent-core-2.1-7t64 libevent-dev libevent-extra-2.1-7t64 libevent-openssl-2.1-7t64 libevent-pthreads-2.1-7t64 libncurses-dev
+0 upgraded, 7 newly installed, 0 to remove and 1 not upgraded.
+Need to get 982 kB of archives.
+After this operation, 5,098 kB of additional disk space will be used.
 
 cd ~/Downloads
 -L means follow the redirects
@@ -25,12 +43,12 @@ curl -LO https://sourceforge.net/projects/tmux.mirror/files/3.3/tmux-3.3.tar.gz
 #  -f, --file=ARCHIVE         use archive file or device ARCHIVE
 # tar --help | grep -- "-f"
 
-sudo apt install ncurses-dev 
-sudo apt install libevent-dev
+# sudo apt install ncurses-dev 
+# sudo apt install libevent-dev
 tar -zxf tmux-*.tar.gz
 cd tmux-*/
 ./configure
-make 
+sudo make 
 sudo make install  
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 tmux
