@@ -12,7 +12,9 @@
 
 <!-- There are installation dependencies on some fairly major packages. Both tidyverse, httr and odbc require installations at the command line before they can be installed in R. These should help install the required elements: -->
 
-sudo apt install libssl-dev libcurl4-openssl-dev unixodbc-dev libxml2-dev libmariadb-dev libfontconfig1-dev libharfbuzz-dev libfribidi-dev libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev
+sudo apt install libssl-dev libcurl4-openssl-dev unixodbc-dev libxml2-dev libmariadb-dev libfontconfig1-dev libharfbuzz-dev libfribidi-dev libfreetype-dev libpng-dev libtiff5-dev libjpeg-dev
+
+<!-- Note, selecting 'libfreetype-dev' instead of 'libfreetype6-dev' -->
 
 ## Install R on Ubuntu from CRAN Repository
 
