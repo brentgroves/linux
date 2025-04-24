@@ -70,6 +70,9 @@ sudo apt install build-essential libnss3-tools
 - **[remmina](../q_z/remmina/remmina_install.md)**
 <!-- cron -- this is already installed on ubuntu 22.04 -->
 <!-- email - check in reports docker file was part of pipeline  -->
+- **[dbeaver](../a_d/dbeaver/dbeaver.md)**
+- **[soapui](../q_z/soapui/soapui_install.md)**
+
 - **[ksh](../k_p/ksh/ksh_install.md)**
 - **[odbc](../k_p/odbc/install-ubuntu.md)**
 <!-- # I don't think I need an older version for because I don't install a local version of mongodb and conda can install an older ssl if needed for pysoap -->
@@ -81,8 +84,6 @@ sudo apt install build-essential libnss3-tools
 - **[mysql client](../k_p/mysql/mysql-client.md)**
 - **[mysql shell](../k_p/mysql/mysql-shell.md)**
 - **[postgres client](../k_p/postgres/psql/psql-install.md)**
-- **[dbeaver](../a_d/dbeaver/dbeaver.md)**
-- **[soapui](../q_z/soapui/soapui_install.md)**
 - **[meld](../k_p/meld/meld_install.md)**
 - **[ghex](../e_j/ghex/ghex_install.md)**
 - **[postman](../k_p/postman/postman-install.md)**
