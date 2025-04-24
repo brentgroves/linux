@@ -13,8 +13,8 @@ sudo apt install libcanberra-gtk-module
 # Installation
 # Download the install script from http://www.soapui.org/
 cd ~/Downloads/
-chmod +x SoapUI-x64-5.7.2.sh
-./SoapUI-x64-5.7.2.sh
+chmod +x SoapUI-x64-5.8.0.sh
+./SoapUI-x64-5.8.8.sh
 
 # install projects
 cd ~/src
