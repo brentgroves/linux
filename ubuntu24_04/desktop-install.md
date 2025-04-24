@@ -24,10 +24,10 @@ mkdir -p ~/src
 # open vscode installation markdown in vscode and finish the installation.
 
 ```
-## Install **[SSH](../q_z/ssh/ssh-server.md)** 
+
+## Install **[SSH](../q_z/ssh/ssh-server.md)**
 
 ## Install **[Gnome Remote Desktop](https://gitlab.gnome.org/GNOME/gnome-remote-desktop)** server
-
 
 ## Connect to new host remotely
 
