@@ -31,8 +31,6 @@ sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_
 sudo apt install r-base r-base-dev -y
 
 
-
-
 # Enter the R command to access the R console:
 
 ```bash
