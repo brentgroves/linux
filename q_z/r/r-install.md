@@ -35,7 +35,11 @@ sudo apt install r-base r-base-dev -y
 
 # Enter the R command to access the R console:
 
+```bash
+ls -ald /usr/local/lib/R/site-library
+sudo chmod 777 -R /usr/local/lib/R/site-library
 R
+install.packages("languageserver")
 ```
 
 Note: Using the R command without sudo creates a personal library for your user. To install packages that are available to every user on the system, run the R command as a root user by typing sudo -i R.
