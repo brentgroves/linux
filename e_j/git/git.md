@@ -54,7 +54,9 @@ git config --global user.email "kyoung@mobexglobal.com"
 git config --global user.email "brent.groves@gmail.com"
 git config --global core.editor "nano"
 
+# Step 3: Change the default branch from master to main
 
+git config --global init.defaultBranch main
 ```
 
 ## **[Setup user for SSH access to use Azure Dev Ops](./ssh-azure.md)**
