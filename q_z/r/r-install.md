@@ -16,7 +16,7 @@ sudo apt install libssl-dev libcurl4-openssl-dev unixodbc-dev libxml2-dev libmar
 
 <!-- Note, selecting 'libfreetype-dev' instead of 'libfreetype6-dev' -->
 
-## Install R on Ubuntu from CRAN Repository
+## **[Install R on Ubuntu from CRAN Repository](https://phoenixnap.com/kb/install-r-ubuntu)**
 
 To install R from the CRAN repository:
 
