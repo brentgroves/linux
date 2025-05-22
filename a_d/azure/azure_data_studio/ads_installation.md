@@ -1,5 +1,9 @@
 # **[Install Azure Data Studio](https://snapcraft.io/install/azuredatastudio/ubuntu)**
 
+## retires on 2026
+
+Azure Data Studio officially retires on February 28, 2026. You should migrate to Visual Studio Code. This change aims to consolidate SQL development tools and provide a more robust and feature-rich environment for the developer community.
+
 Snaps are applications packaged with all their dependencies to run on all popular Linux distributions from a single build. They update automatically and roll back gracefully.
 
 Snaps are discoverable and installable from the Snap Store, an app store with an audience of millions.
