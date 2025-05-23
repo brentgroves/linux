@@ -15,3 +15,18 @@ To install Azure Data Studio, simply use the following command:
 ```bash
 sudo snap install azuredatastudio
 ```
+
+## launch with basic plain text authentication
+
+**[Keychain issues](https://code.visualstudio.com/docs/configure/settings-sync#_troubleshooting-keychain-issues)**
+
+```bash
+azuredatastudio --verbose --vmodule="*/components/os_crypt/*=1"
+# azuredatastudio --password-store="gnome-keyring"
+# azuredatastudio --password-store="gnome-libsecret"
+# You're running in a GNOME environment but the OS keyring is not available for encryption. Ensure you have gnome-keyring or another libsecret compatible implementation installed and running.
+
+# The only one that works is basic
+# And then I had to launch passwords and keys before launching ads.
+azuredatastudio --password-store="basic"
+```
