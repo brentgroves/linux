@@ -12,8 +12,9 @@
 ## Install remmina
 
 ```bash
-sudo add-apt-repository ppa:remmina-ppa-team/remmina-next
+sudo add-apt-repository ppa:remmina-ppa-team/remmina-next -y
 sudo apt install remmina remmina-plugin-rdp remmina-plugin-secret remmina-plugin-spice
+
 
 # Run Remmina on Ubuntu 22.04
 
