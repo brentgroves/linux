@@ -6,8 +6,11 @@ vim ~/.ssh/config
 Set it as follows for all or selected host:
 
 ```bash
-Host *
+Host research01
     ForwardX11 yes
+# Host *
+    # ForwardX11 yes
+
 ```
 
 Save and close the file.
