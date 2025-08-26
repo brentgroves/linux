@@ -15,3 +15,10 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 # got a permission error when installing the .deb file with apt so use dpkg instead.
 
 # You will now find Google Chrome accessible under the Activities menu. Just search for it by typing “chrome.” You can right click this icon and add it to your quick launch bar if you want.
+
+2. If you encounter any dependency issues, resolve them by running:
+   ```bash
+sudo apt-get install -f
+
+google-chrome
+```   
