@@ -35,20 +35,27 @@ git add -A
 git commit -m "updated source code"
 git push -u origin main
 
-cd ~/src/repsys/volumes/go/tutorials/docker/go_web_docker
-echo "commit go_web_docker"
-git add -A 
-git commit -m "updated source code"
-git push -u origin main
-
 cd ~/src/repsys/volumes/java/etlj
 echo "commit etlj"
 git add -A 
 git commit -m "updated source code"
 git push -u origin main
 
+
+cd ~/src/repsys/volumes/python/tbetl
+echo "commit tbetl"
+git add -A 
+git commit -m "updated source code"
+git push -u origin main
+
 cd ~/src/repsys/volumes/python/tutorials/flask_cert
 echo "commit flask_cert"
+git add -A 
+git commit -m "updated source code"
+git push -u origin main
+
+cd ~/src/repsys/volumes/pki
+echo "commit pki"
 git add -A 
 git commit -m "updated source code"
 git push -u origin main
