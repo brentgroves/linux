@@ -12,4 +12,7 @@ echo "pulling liokr"
 echo "pulling biokr"
 ./startday_biokr.sh
 
+echo "pulling gitlab liokr"
+./startday_gitlab_liokr.sh
+
 popd
