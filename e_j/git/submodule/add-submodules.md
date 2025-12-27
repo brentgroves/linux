@@ -2,9 +2,10 @@
 
 ## references
 
-<https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-add-submodules-to-GitHub-repos>
+- **[add submodules to github](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-add-submodules-to-GitHub-repos)**
 
-<https://gist.github.com/gitaarik/8735255#adding-a-submodule>
+## **[Add a Submodule](https://gist.github.com/gitaarik/8735255#adding-a-submodule)**
+
 You can add a submodule to a repository like this:
 
 ```bash
