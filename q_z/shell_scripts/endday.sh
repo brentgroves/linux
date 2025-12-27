@@ -20,4 +20,9 @@ echo "pulling biokr"
 echo "pushing biokr"
 ./endday_biokr.sh
 
+echo "pulling gitlab liokr"
+./startday_gitlab_liokr.sh
+
+echo "pushing gitlab liokr"
+./endday_gitlab_liokr.sh
 popd
