@@ -11,3 +11,4 @@
 ~/bin/shell_scripts/freshstart_go.sh
 ~/bin/shell_scripts/freshstart_python.sh
 ~/bin/shell_scripts/freshstart_rust.sh
+~/bin/shell_scripts/freshstart_node.sh

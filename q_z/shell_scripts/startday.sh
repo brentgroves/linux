@@ -36,4 +36,7 @@ echo "pulling python"
 echo "pulling rust"
 ./startday_rust.sh
 
+echo "pulling node"
+./startday_node.sh
+
 popd
