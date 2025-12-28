@@ -3,7 +3,7 @@
 pushd .
 
 cd ~/src
-rm -rf ~/src/go
-git clone --recursive git@github.com:brentgroves/go.git
+rm -rf ~/src/python
+git clone --recursive git@github.com:brentgroves/python.git
 
 popd

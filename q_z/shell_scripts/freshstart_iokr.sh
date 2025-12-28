@@ -4,6 +4,6 @@ pushd .
 
 cd ~/src
 rm -rf ~/src/iokr
-git clone --recursive git@github.com:brentgroves/iokr.git
+git clone --recursive git@bitbucket.org-brent_admin:linamar_structures/iokr.git
 
 popd
