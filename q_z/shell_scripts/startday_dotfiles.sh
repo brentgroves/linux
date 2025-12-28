@@ -4,9 +4,8 @@ pushd .
 
 # --recurse-submodules don't seem to always pull all the commits
 
-echo "pulling linux"
-cd ~/src/linux
+echo "pulling dotfiles"
+cd ~/dotfiles
 git pull --recurse-submodules
-
 
 popd
