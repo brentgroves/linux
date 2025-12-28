@@ -21,6 +21,8 @@ rm -f ~/bin/shell_scripts/*_go.sh
 rm -f ~/bin/shell_scripts/*_rust.sh 
 rm -f ~/bin/shell_scripts/*_python.sh 
 rm -f ~/bin/shell_scripts/*_node.sh 
+rm -f ~/bin/shell_scripts/*_wasm.sh 
+rm -f ~/bin/shell_scripts/*_c_cpp.sh 
 
 cp ~/src/linux/q_z/shell_scripts/scc.sh ~/bin/shell_scripts/
 cp ~/src/linux/q_z/shell_scripts/cp_*.sh ~/bin/shell_scripts/
@@ -41,4 +43,7 @@ cp ~/src/linux/q_z/shell_scripts/*_go.sh ~/bin/shell_scripts/
 cp ~/src/linux/q_z/shell_scripts/*_rust.sh ~/bin/shell_scripts/
 cp ~/src/linux/q_z/shell_scripts/*_python.sh ~/bin/shell_scripts/
 cp ~/src/linux/q_z/shell_scripts/*_node.sh ~/bin/shell_scripts/
+cp ~/src/linux/q_z/shell_scripts/*_wasm.sh ~/bin/shell_scripts/
+cp ~/src/linux/q_z/shell_scripts/*_c_cpp.sh ~/bin/shell_scripts/
+
 popd

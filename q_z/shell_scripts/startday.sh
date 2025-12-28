@@ -39,4 +39,9 @@ echo "pulling rust"
 echo "pulling node"
 ./startday_node.sh
 
+echo "pulling wasm"
+./startday_wasm.sh
+
+echo "pulling c_cpp"
+./startday_c_cpp.sh
 popd

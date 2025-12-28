@@ -32,4 +32,11 @@ echo "pushing rust"
 echo "pushing node"
 ./endday_node.sh
 
+echo "pushing wasm"
+./endday_wasm.sh
+
+echo "pushing c_cpp"
+./endday_c_cpp.sh
+
+
 popd

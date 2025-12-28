@@ -12,3 +12,5 @@
 ~/bin/shell_scripts/freshstart_python.sh
 ~/bin/shell_scripts/freshstart_rust.sh
 ~/bin/shell_scripts/freshstart_node.sh
+~/bin/shell_scripts/freshstart_wasm.sh
+~/bin/shell_scripts/freshstart_c_cpp.sh
