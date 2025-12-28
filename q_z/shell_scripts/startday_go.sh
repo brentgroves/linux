@@ -2,7 +2,8 @@
 # https://gist.github.com/gitaarik/8735255
 pushd .
 
-cd ~/src/biokr
+echo "pulling go"
+cd ~/src/go
 git pull --recurse-submodules
 
 popd

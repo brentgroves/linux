@@ -2,41 +2,32 @@
 # https://gist.github.com/gitaarik/8735255
 pushd .
 
-echo "pulling rsapb"
+cd ~/src
+rm -rf ~/src/repsys
+git clone --recursive git@github.com:brentgroves/repsys.git
+
+## git switch main if detached head
 cd ~/src/repsys/volumes/ansible/rsapb
-git pull
-
-echo "pulling rsbsh"
+git switch main
 cd ~/src/repsys/volumes/bash/rsbsh
-git pull
-
-echo "pulling replib"
+git switch main
 cd ~/src/repsys/volumes/go/replib
-git pull
-
-echo "pulling runner"
+git switch main
 cd ~/src/repsys/volumes/go/runner
-git pull
-
-echo "pulling go_web_docker"
+git switch main
 cd ~/src/repsys/volumes/go/tutorials/docker/go_web_docker
-git pull
-
-echo "pulling etlj"
+git switch main
 cd ~/src/repsys/volumes/java/etlj
-git pull
-
-echo "pulling flask_cert"
+git switch main
 cd ~/src/repsys/volumes/python/tutorials/flask_cert
-git pull
-
-echo "pulling tbsql"
+git switch main
 cd ~/src/repsys/volumes/sql/tbsql
-git pull
+git switch main
 
-echo "pulling repsys"
 cd ~/src/repsys
-git pull --recurse-submodules
+git add -A
+git commit -m "Freshstart commit"
+git push -u origin main
 
 
 popd

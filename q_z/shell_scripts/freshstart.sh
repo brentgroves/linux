@@ -1,35 +1,4 @@
 #!/bin/bash
 # https://gist.github.com/gitaarik/8735255
-pushd .
-rm -rf ~/dotfiles
-cd ~
-git clone https://github.com/brentgroves/dotfiles.git
-cd ~/src
-rm -rf ~/src/repsys
-git clone --recursive git@github.com:brentgroves/repsys.git
-## git switch main if detached head
-cd ~/src/repsys/volumes/ansible/rsapb
-git switch main
-cd ~/src/repsys/volumes/bash/rsbsh
-git switch main
-cd ~/src/repsys/volumes/go/replib
-git switch main
-cd ~/src/repsys/volumes/go/runner
-git switch main
-cd ~/src/repsys/volumes/go/tutorials/docker/go_web_docker
-git switch main
-cd ~/src/repsys/volumes/java/etlj
-git switch main
-cd ~/src/repsys/volumes/python/tutorials/flask_cert
-git switch main
-cd ~/src/repsys/volumes/sql/tbsql
-git switch main
-cd ~/src/repsys/linux
-git switch main
 
-cd ~/src/repsys
-git add -A
-git commit -m "Freshstart commit"
-git push -u origin main
-
-popd
+~/bin/shell_scripts/freshstart_repsys.sh

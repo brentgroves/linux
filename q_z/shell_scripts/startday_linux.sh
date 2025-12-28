@@ -5,14 +5,14 @@ pushd .
 # --recurse-submodules don't seem to always pull all the commits
 
 echo "pulling linux"
-cd ~/gitlab/liokr/linux
-git pull
-
-cd ~/gitlab/liokr
+cd ~/src/linux
 git pull --recurse-submodules
 
-# when repsys makes changes we need to switch to main after liokr pull
-cd ~/gitlab/liokr/linux
-git switch main
+# echo "pulling linux"
+# cd ~/src/repsys/linux
+# git pull --recurse-submodules
+
+# cd ~/src/repsys/linux
+# git switch main
 
 popd
