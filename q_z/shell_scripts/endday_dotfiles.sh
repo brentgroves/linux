@@ -6,6 +6,6 @@ cd ~/dotfiles
 echo "commit dotfiles changes"
 git add -A 
 git commit -m "updated source code"
-git push -u origin main
+git push -u origin master
 
 popd
