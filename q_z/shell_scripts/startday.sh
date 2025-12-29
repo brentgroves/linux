@@ -44,4 +44,8 @@ echo "pulling wasm"
 
 echo "pulling c_cpp"
 ./startday_c_cpp.sh
+
+echo "pulling dotfiles"
+./startday_dotfiles.sh
+
 popd

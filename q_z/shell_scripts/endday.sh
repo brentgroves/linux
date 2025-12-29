@@ -38,5 +38,7 @@ echo "pushing wasm"
 echo "pushing c_cpp"
 ./endday_c_cpp.sh
 
+echo "pushing dotfiles"
+./endday_dotfiles.sh
 
 popd
