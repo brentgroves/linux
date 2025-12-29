@@ -56,7 +56,7 @@ To clone a repository, use the git clone command with the updated host bitbucket
 # git clone git@bitbucket.org-{bitbucket_username}:{workspace}/{repo}.git
 git clone git@bitbucket.org-brent_groves:biokr/biokr.git
 git clone git@bitbucket.org-brent_admin:liokr/liokr.git
-git clone git@gitlab.com-linamar:brent.groves/liokr.git
+git clone git@gitlab.com-linamar:brent.groves/gitlab.git
 
 ```
 
