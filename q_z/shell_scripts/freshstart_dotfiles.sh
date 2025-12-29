@@ -4,6 +4,6 @@ pushd .
 
 rm -rf ~/dotfiles
 cd ~
-git clone git://github.com/brentgroves/dotfiles.git
+git clone --recursive git@github.com:brentgroves/dotfiles.git
 
 popd
