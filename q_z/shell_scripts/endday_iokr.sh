@@ -2,7 +2,7 @@
 pushd .
 # https://gist.github.com/gitaarik/8735255
 
-cd ~/src/iokr/teams/team_20/goals/goal_10/key_results/kr_10/inititives/init_10
+cd ~/src/iokr/teams/team_20/goals/goal_10/key_resultsls/kr_10/inititives/init_10/iokr_guide
 echo "commit iokr_guide changes"
 git add -A 
 git commit -m "updated source code"
