@@ -11,6 +11,7 @@ rm -f ~/bin/shell_scripts/freshstart.sh
 rm -f ~/bin/shell_scripts/startday.sh 
 rm -f ~/bin/shell_scripts/endday.sh 
 rm -f ~/bin/shell_scripts/*_repsys.sh 
+rm -f ~/bin/shell_scripts/*_gitlab.sh
 rm -f ~/bin/shell_scripts/*_k8s.sh 
 rm -f ~/bin/shell_scripts/*_research.sh 
 rm -f ~/bin/shell_scripts/*_linux.sh 
@@ -32,6 +33,7 @@ cp ~/src/linux/q_z/shell_scripts/freshstart.sh ~/bin/shell_scripts/
 cp ~/src/linux/q_z/shell_scripts/startday.sh ~/bin/shell_scripts/
 cp ~/src/linux/q_z/shell_scripts/endday.sh ~/bin/shell_scripts/
 cp ~/src/linux/q_z/shell_scripts/*_repsys.sh ~/bin/shell_scripts/
+cp ~/src/linux/q_z/shell_scripts/*_gitlab.sh ~/bin/shell_scripts/
 cp ~/src/linux/q_z/shell_scripts/*_k8s.sh ~/bin/shell_scripts/
 cp ~/src/linux/q_z/shell_scripts/*_research.sh ~/bin/shell_scripts/
 cp ~/src/linux/q_z/shell_scripts/cp_*.sh ~/bin/shell_scripts/
