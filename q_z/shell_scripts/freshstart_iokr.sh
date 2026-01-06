@@ -10,6 +10,10 @@ git clone --recursive git@bitbucket.org-brent_admin:linamar_structures/iokr.git
 cd ~/src/iokr/inititives/inititive_60/iokr_guide
 git switch main
 
+## git switch main if detached head
+cd ~/src/iokr/inititives/inititive_50/publishing_guide
+git switch main
+
 cd ~/src/iokr
 git add -A
 git commit -m "Freshstart commit"

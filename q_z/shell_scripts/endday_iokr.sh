@@ -8,6 +8,12 @@ git add -A
 git commit -m "updated source code"
 git push -u origin main
 
+cd ~/src/iokr/inititives/inititive_50/publishing_guide
+echo "commit publishing_guide changes"
+git add -A 
+git commit -m "updated source code"
+git push -u origin main
+
 cd ~/src/iokr
 echo "commit iokr changes"
 git add -A 

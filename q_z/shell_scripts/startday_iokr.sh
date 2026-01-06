@@ -3,7 +3,7 @@
 pushd .
 
 echo "pulling iokr_guide"
-cd ~/src/iokr/inititives/inititive_60/iokr_guide
+cd ~/src/iokr/inititives/inititive_50/publishing_guide
 git pull
 
 echo "pulling iokr"
