@@ -4,6 +4,6 @@ pushd .
 
 cd ~/src
 rm -rf ~/src/research
-git clone --recursive git@github.com:brentgroves/research.git
+git clone --recursive git@bitbucket.org:linamar_structures/research.git
 
 popd
