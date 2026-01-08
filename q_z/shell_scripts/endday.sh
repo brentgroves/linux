@@ -38,4 +38,7 @@ echo "pushing c_cpp"
 echo "pushing dotfiles"
 ./endday_dotfiles.sh
 
+echo "pushing multimedia"
+./endday_multimedia.sh
+
 popd

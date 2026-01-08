@@ -45,4 +45,7 @@ echo "pulling c_cpp"
 echo "pulling dotfiles"
 ./startday_dotfiles.sh
 
+echo "pulling multimedia"
+./startday_multimedia.sh
+
 popd

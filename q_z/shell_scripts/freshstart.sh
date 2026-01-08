@@ -14,3 +14,4 @@
 ~/bin/shell_scripts/freshstart_wasm.sh
 ~/bin/shell_scripts/freshstart_c_cpp.sh
 ~/bin/shell_scripts/freshstart_dotfiles.sh
+~/bin/shell_scripts/freshstart_multimedia.sh
