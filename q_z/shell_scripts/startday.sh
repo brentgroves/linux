@@ -24,9 +24,6 @@ echo "pulling iokr"
 echo "pulling liokr"
 ./startday_liokr.sh
 
-echo "pulling biokr"
-./startday_biokr.sh
-
 echo "pulling go"
 ./startday_go.sh
 

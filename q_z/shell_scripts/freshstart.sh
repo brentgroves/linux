@@ -7,7 +7,6 @@
 ~/bin/shell_scripts/freshstart_linux.sh
 ~/bin/shell_scripts/freshstart_iokr.sh
 ~/bin/shell_scripts/freshstart_liokr.sh
-~/bin/shell_scripts/freshstart_biokr.sh
 ~/bin/shell_scripts/freshstart_go.sh
 ~/bin/shell_scripts/freshstart_python.sh
 ~/bin/shell_scripts/freshstart_rust.sh

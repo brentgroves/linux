@@ -20,9 +20,6 @@ echo "pushing iokr"
 echo "pushing liokr"
 ./endday_liokr.sh
 
-echo "pushing biokr"
-./endday_biokr.sh
-
 echo "pushing go"
 ./endday_go.sh
 
