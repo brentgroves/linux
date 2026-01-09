@@ -23,7 +23,7 @@ rm -f ~/bin/shell_scripts/*_python.sh
 rm -f ~/bin/shell_scripts/*_node.sh 
 rm -f ~/bin/shell_scripts/*_wasm.sh 
 rm -f ~/bin/shell_scripts/*_c_cpp.sh 
-rm -f ~/bin/shell_scripts/*multimedia.sh
+rm -f ~/bin/shell_scripts/*_multimedia.sh
 
 cp ~/src/linux/q_z/shell_scripts/scc.sh ~/bin/shell_scripts/
 cp ~/src/linux/q_z/shell_scripts/cp_*.sh ~/bin/shell_scripts/
