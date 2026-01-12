@@ -48,4 +48,7 @@ echo "pulling dotfiles"
 echo "pulling multimedia"
 ./startday_multimedia.sh
 
+echo "pulling news"
+./startday_news.sh
+
 popd
