@@ -6,12 +6,28 @@
 
 ## **[Add a Submodule](https://gist.github.com/gitaarik/8735255#adding-a-submodule)**
 
+## Q&As
+
+1. For git submodule add does the target directory need to exist prior to running.
+
+No, the target directory does not need to exist prior to running git submodule add [1]. Git handles the creation of the directory for you automatically.
+When you execute the command, Git performs the following steps:
+Clones the repository: It clones the specified repository URL into the specified path.
+Creates the directory: If the directory path doesn't exist, Git creates it.
+Records the submodule: It adds an entry to the .gitmodules file and stages the new submodule for commit in the main repository.
+For example, running git submodule add github.com my/target/directory will create the my/target/directory path if it doesn't already exist and place the submodule's content inside it.
+
 You can add a submodule to a repository like this:
 
 ```bash
 cd ~/src/repsys
 git submodule add git@github.com:brentgroves/go_web_docker.git volumes/go/tutorials/docker/go_web_docker
+cd ~/src/iokrs
+git submodule add git@bitbucket.org-brent_admin:linamar_structures/iokr_guide.git inititives/inititive_60/iokr_guide
+git submodule add git@bitbucket.org-brent_admin:linamar_structures/struct_okrs.git inititives/inititive_90/struct_okrs
 
+git clone git@bitbucket.org:linamar_structures/struct__okrs.git
+git submodule add git@bitbucket.org-brent_admin:linamar_structures/struct__okrs.git inititives/inititive_90/struct_okrs
 # volumes/go/tutorials/docker/go_web_docker is going to be a file containing the repo info
 git status
 git add -A

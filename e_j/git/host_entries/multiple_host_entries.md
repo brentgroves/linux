@@ -23,6 +23,8 @@ ssh-add ~/.ssh/gitlab_linamar
 
 ## 4. Add each private key to the SSH configuration, such as
 
+cat ~/.ssh/config
+
 ```toml
 # git@gitlab.com-linamar:brent.groves/liokr.git
 Host gitlab.com-linamar

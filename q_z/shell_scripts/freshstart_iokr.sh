@@ -7,6 +7,10 @@ rm -rf ~/src/iokr
 git clone --recursive git@bitbucket.org-brent_admin:linamar_structures/iokr.git
 
 ## git switch main if detached head
+cd ~/src/iokr/inititives/inititive_90/okrs
+git switch main
+
+## git switch main if detached head
 cd ~/src/iokr/inititives/inititive_60/iokr_guide
 git switch main
 
