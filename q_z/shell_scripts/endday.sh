@@ -41,7 +41,7 @@ echo "pushing dotfiles"
 echo "pushing multimedia"
 ./endday_multimedia.sh
 
-`echo "pushing news"
+echo "pushing news"
 ./endday_news.sh
 
 popd
