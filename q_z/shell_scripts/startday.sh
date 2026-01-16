@@ -6,8 +6,9 @@ cd ~/bin/shell_scripts
 echo "pulling repsys"
 ./startday_repsys.sh
 
-echo "pulling gitlab"
-./startday_gitlab.sh
+# this is very slow
+# echo "pulling gitlab"
+# ./startday_gitlab.sh
 
 echo "pulling k8s"
 ./startday_k8s.sh

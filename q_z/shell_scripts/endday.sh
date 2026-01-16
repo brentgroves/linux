@@ -5,6 +5,10 @@ cd ~/bin/shell_scripts
 echo "pushing repsys"
 ./endday_repsys.sh
 
+# this is very slow
+# echo "pushing gitlab"
+# ./endday_gitlab.sh
+
 echo "pushing k8s"
 ./endday_k8s.sh
 
