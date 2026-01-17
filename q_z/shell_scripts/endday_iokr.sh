@@ -2,21 +2,21 @@
 pushd .
 # https://gist.github.com/gitaarik/8735255
 
-cd ~/src/iokr/inititives/inititive_90/okrs
+cd ~/src/iokr/teams/team_20/goals/goal_10/key_results/kr_10/inititives/init_30/okrs.git
 git switch main
 echo "commit okrs changes"
 git add -A 
 git commit -m "updated source code"
 git push -u origin main
 
-cd ~/src/iokr/inititives/inititive_60/iokr_guide
+cd ~/src/iokr/teams/team_20/goals/goal_10/key_results/kr_10/inititives/init_10/iokr_guide
 git switch main
 echo "commit iokr_guide changes"
 git add -A 
 git commit -m "updated source code"
 git push -u origin main
 
-cd ~/src/iokr/inititives/inititive_50/publishing_guide
+cd ~/src/iokr/teams/team_20/goals/goal_10/key_results/kr_10/inititives/init_20/publishing_guide
 git switch main
 echo "commit publishing_guide changes"
 git add -A 
