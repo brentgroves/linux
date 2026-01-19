@@ -15,12 +15,12 @@ cd teams/team_20/goals/goal_10/key_results/kr_10/inititives/init_20/publishing_g
 git switch main
 
 ## git switch main if detached head
-cd teams/team_20/goals/goal_10/key_results/kr_10/inititives/init_30/okrs.git
+cd teams/team_20/goals/goal_10/key_results/kr_10/inititives/init_30/okrs
 git switch main
 
-cd ~/src/iokr
-git add -A
-git commit -m "Freshstart commit"
-git push -u origin main
+# cd ~/src/iokr
+# git add -A
+# git commit -m "Freshstart commit"
+# git push -u origin main
 
 popd
