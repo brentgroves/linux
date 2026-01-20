@@ -2,7 +2,7 @@
 pushd .
 # https://gist.github.com/gitaarik/8735255
 
-cd ~/src/iokr/teams/team_20/goals/goal_10/key_results/kr_10/inititives/init_30/okrs.git
+cd ~/src/iokr/teams/team_20/goals/goal_10/key_results/kr_10/inititives/init_30/okrs
 git switch main
 echo "commit okrs changes"
 git add -A 

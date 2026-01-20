@@ -11,7 +11,7 @@ cd ~/src/iokr/teams/team_20/goals/goal_10/key_results/kr_10/inititives/init_20/p
 git pull
 
 echo "pulling okrs"
-cd ~/src/iokr/teams/team_20/goals/goal_10/key_results/kr_10/inititives/init_30/okrs.git
+cd ~/src/iokr/teams/team_20/goals/goal_10/key_results/kr_10/inititives/init_30/okrs
 git pull
 
 echo "pulling iokr"
