@@ -23,6 +23,20 @@ git add -A
 git commit -m "updated source code"
 git push -u origin main
 
+cd ~/src/iokr/teams/team_50/goals/goal_10/key_results/kr_10/inititives/init_10/dimcol
+git switch main
+echo "commit dimcol changes"
+git add -A 
+git commit -m "updated source code"
+git push -u origin main
+
+cd ~/src/iokr/teams/team_50/goals/goal_10/key_results/kr_10/inititives/init_20/procap
+git switch main
+echo "commit procap changes"
+git add -A 
+git commit -m "updated source code"
+git push -u origin main
+
 cd ~/src/iokr
 git switch main
 echo "commit iokr changes"
