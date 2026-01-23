@@ -22,6 +22,10 @@ echo "pulling procap"
 cd ~/src/iokr/teams/team_50/goals/goal_10/key_results/kr_10/inititives/init_20/procap
 git pull
 
+echo "pulling feedback"
+cd ~/src/iokr/teams/team_20/goals/goal_10/key_results/kr_10/inititives/init_40/feedback
+git pull
+
 echo "pulling iokr"
 cd ~/src/iokr
 git pull --recurse-submodules

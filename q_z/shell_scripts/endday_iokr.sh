@@ -37,6 +37,13 @@ git add -A
 git commit -m "updated source code"
 git push -u origin main
 
+cd ~/src/iokr/teams/team_20/goals/goal_10/key_results/kr_10/inititives/init_40/feedback
+git switch main
+echo "commit feedback changes"
+git add -A 
+git commit -m "updated source code"
+git push -u origin main
+
 cd ~/src/iokr
 git switch main
 echo "commit iokr changes"
