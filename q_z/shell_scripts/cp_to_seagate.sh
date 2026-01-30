@@ -17,5 +17,7 @@ cp -r ~/src/backups "/media/brent/Seagate Expansion Drive/"
 rm -rf "/media/brent/Seagate Expansion Drive/pki"
 cp -r ~/src/pki "/media/brent/Seagate Expansion Drive/"
 
+rm -rf "/media/brent/Seagate Expansion Drive/manuals"
+cp -r ~/src/manuals "/media/brent/Seagate Expansion Drive/"
 
 popd
