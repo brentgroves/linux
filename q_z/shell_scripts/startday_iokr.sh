@@ -34,6 +34,10 @@ echo "pulling github"
 cd ~/src/iokr/teams/team_20/goals/goal_10/key_results/kr_10/inititives/init_50/github
 git pull
 
+echo "pulling oil_consumption"
+cd ~/src/iokr/teams/team_30/goals/goal_10/key_results/kr_10/inititives/init_20/oil_consumption
+git pull
+
 echo "pulling iokr"
 cd ~/src/iokr
 git pull --recurse-submodules
