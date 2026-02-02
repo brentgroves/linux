@@ -43,7 +43,7 @@ cd ~/src/iokr/teams/team_30/goals/goal_10/key_results/kr_10/inititives/init_20/o
 git switch main
 
 ## git switch main if detached head
-cd ~/src/iokr/teams/team_40/goals/goal_10/key_results/kr_10/inititives/init_40/powerbi_guide
+cd ~/src/iokr/teams/team_40/goals/goal_10/key_results/kr_10/inititives/init_10/powerbi_guide
 git switch main
 
 # cd ~/src/iokr
