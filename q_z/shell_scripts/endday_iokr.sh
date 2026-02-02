@@ -51,6 +51,13 @@ git add -A
 git commit -m "updated source code"
 git push -u origin main
 
+cd ~/src/iokr/teams/team_40/goals/goal_10/key_results/kr_10/inititives/init_10/powerbi_guide
+git switch main
+echo "commit powerbi_guide changes"
+git add -A 
+git commit -m "updated source code"
+git push -u origin main
+
 cd ~/src/iokr/teams/team_20/goals/goal_10/key_results/kr_10/inititives/init_50/github
 git switch main
 echo "commit github changes"

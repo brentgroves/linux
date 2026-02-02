@@ -42,6 +42,10 @@ git switch main
 cd ~/src/iokr/teams/team_30/goals/goal_10/key_results/kr_10/inititives/init_20/oil_consumption
 git switch main
 
+## git switch main if detached head
+cd ~/src/iokr/teams/team_40/goals/goal_10/key_results/kr_10/inititives/init_40/powerbi_guide
+git switch main
+
 # cd ~/src/iokr
 # git add -A
 # git commit -m "Freshstart commit"

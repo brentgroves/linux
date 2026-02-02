@@ -30,6 +30,10 @@ echo "pulling fabric"
 cd ~/src/iokr/teams/team_30/goals/goal_10/key_results/kr_10/inititives/init_10/fabric_guide
 git pull
 
+echo "pulling powerbi_guide"
+cd ~/src/iokr/teams/team_40/goals/goal_10/key_results/kr_10/inititives/init_10/powerbi_guide
+git pull
+
 echo "pulling github"
 cd ~/src/iokr/teams/team_20/goals/goal_10/key_results/kr_10/inititives/init_50/github
 git pull
