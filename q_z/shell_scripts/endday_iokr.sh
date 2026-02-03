@@ -72,6 +72,13 @@ git add -A
 git commit -m "updated source code"
 git push -u origin main
 
+cd ~/src/iokr/teams/team_60/goals/goal_10/key_results/kr_10/inititives/init_10/microcloud
+git switch main
+echo "commit microcloud changes"
+git add -A 
+git commit -m "updated source code"
+git push -u origin main 
+
 cd ~/src/iokr
 git switch main
 echo "commit iokr changes"
