@@ -10,8 +10,8 @@ file:.git/config        remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
 file:.git/config        branch.main.remote=origin
 file:.git/config        branch.main.vscode-merge-base=origin/main
 file:.git/config        branch.main.merge=refs/heads/main
-file:.git/config        submodule.inititives/inititive_50/publishing_guide.url=git@bitbucket.org-brent_admin:linamar_structures/publishing_guide.git
-file:.git/config        submodule.inititives/inititive_60/iokr_guide.url=git@bitbucket.org-brent_admin:linamar_structures/iokr_guide.git
+file:.git/config        submodule.initiatives/initiative_50/publishing_guide.url=git@bitbucket.org-brent_admin:linamar_structures/publishing_guide.git
+file:.git/config        submodule.initiatives/initiative_60/iokr_guide.url=git@bitbucket.org-brent_admin:linamar_structures/iokr_guide.git
 ```
 
 qqn

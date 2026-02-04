@@ -8,19 +8,19 @@ It is a fairly common need but has a slightly convoluted procedure. To remove a 
 3. Run git rm --cached path_to_submodule (no trailing slash).
 
     ```bash
-    git rm --cached inititives/inititive_60/iokr_guide
-    git rm --cached inititives/inititive_50/publishing_guide
-    git rm --cached inititives/inititive_90/okrs
+    git rm --cached initiatives/initiative_60/iokr_guide
+    git rm --cached initiatives/initiative_50/publishing_guide
+    git rm --cached initiatives/initiative_90/okrs
 
-    [submodule "inititives/inititive_60/iokr_guide"]
-      path = inititives/inititive_60/iokr_guide
+    [submodule "initiatives/initiative_60/iokr_guide"]
+      path = initiatives/initiative_60/iokr_guide
       url = git@bitbucket.org-brent_admin:linamar_structures/iokr_guide.git
-    [submodule "inititives/inititive_50/publishing_guide"]
-      path = inititives/inititive_50/publishing_guide
+    [submodule "initiatives/initiative_50/publishing_guide"]
+      path = initiatives/initiative_50/publishing_guide
       url = git@bitbucket.org-brent_admin:linamar_structures/publishing_guide.git
 
-    [submodule "inititives/inititive_90/okrs"]
-      path = inititives/inititive_90/okrs
+    [submodule "initiatives/initiative_90/okrs"]
+      path = initiatives/initiative_90/okrs
       url = git@bitbucket.org-brent_admin:linamar_structures/okrs.git
 
     ```

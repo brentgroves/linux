@@ -23,11 +23,11 @@ You can add a submodule to a repository like this:
 cd ~/src/repsys
 git submodule add git@github.com:brentgroves/go_web_docker.git volumes/go/tutorials/docker/go_web_docker
 cd ~/src/iokrs
-git submodule add git@bitbucket.org-brent_admin:linamar_structures/iokr_guide.git teams/team_20/goals/goal_10/key_results/kr_10/inititives/init_10/iokr_guide
+git submodule add git@bitbucket.org-brent_admin:linamar_structures/iokr_guide.git teams/team_20/goals/goal_10/key_results/kr_10/initiatives/init_10/iokr_guide
 
-git submodule add git@bitbucket.org-brent_admin:linamar_structures/publishing_guide.git teams/team_20/goals/goal_10/key_results/kr_10/inititives/init_20/publishing_guide
+git submodule add git@bitbucket.org-brent_admin:linamar_structures/publishing_guide.git teams/team_20/goals/goal_10/key_results/kr_10/initiatives/init_20/publishing_guide
 
-git submodule add git@bitbucket.org-brent_admin:linamar_structures/okrs.git teams/team_20/goals/goal_10/key_results/kr_10/inititives/init_30/okrs.git
+git submodule add git@bitbucket.org-brent_admin:linamar_structures/okrs.git teams/team_20/goals/goal_10/key_results/kr_10/initiatives/init_30/okrs.git
 
 # volumes/go/tutorials/docker/go_web_docker is going to be a file containing the repo info
 git status
