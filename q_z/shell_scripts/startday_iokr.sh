@@ -46,6 +46,10 @@ echo "pulling microcloud"
 cd ~/src/iokr/teams/team_60/goals/goal_10/key_results/kr_10/initiatives/init_10/microcloud
 git pull
 
+echo "pulling plex_labels"
+cd ~/src/iokr/teams/team_110/goals/goal_10/key_results/kr_10/initiatives/init_10/plex_labels
+git pull
+
 echo "pulling iokr"
 cd ~/src/iokr
 git pull --recurse-submodules
