@@ -86,6 +86,13 @@ git add -A
 git commit -m "updated source code"
 git push -u origin main
 
+cd ~/src/iokr/teams/team_70/goals/goal_10/key_results/kr_10/initiatives/init_10/kubernetes
+git switch main
+echo "commit kubernetes changes"
+git add -A 
+git commit -m "updated source code"
+git push -u origin main
+
 cd ~/src/iokr
 git switch main
 echo "commit iokr changes"
