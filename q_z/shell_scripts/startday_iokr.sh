@@ -54,6 +54,10 @@ echo "pulling kubernetes"
 cd ~/src/iokr/teams/team_70/goals/goal_10/key_results/kr_10/initiatives/init_10/kubernetes
 git pull
 
+echo "pulling autoetl"
+cd ~/src/iokr/teams/team_80/goals/goal_10/key_results/kr_10/initiatives/init_10/autoetl
+git pull
+
 echo "pulling iokr"
 cd ~/src/iokr
 git pull --recurse-submodules
