@@ -3,7 +3,7 @@
 pushd .
 
 cd ~/src
-rm -rf ~/src/biokr
+rm -rf ~/src/multimedia
 git clone --recursive git@bitbucket.org-brent_admin:linamar_structures/multimedia.git
 
 popd
