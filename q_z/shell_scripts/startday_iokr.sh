@@ -39,7 +39,7 @@ cd ~/src/iokr/teams/team_20/goals/goal_10/key_results/kr_10/initiatives/init_50/
 git pull
 
 echo "pulling oil_consumption"
-cd ~/src/iokr/teams/team_30/goals/goal_10/key_results/kr_10/initiatives/init_20/oil_consumption
+cd ~/src/iokr/teams/team_140/goals/goal_10/key_results/kr_10/initiatives/init_10/oil_consumption
 git pull
 
 echo "pulling microcloud"
