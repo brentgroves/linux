@@ -58,6 +58,10 @@ echo "pulling autoetl"
 cd ~/src/iokr/teams/team_80/goals/goal_10/key_results/kr_10/initiatives/init_10/autoetl
 git pull
 
+echo "pulling eng_tracking"
+cd ~/src/iokr/teams/team_150/goals/goal_10/key_results/kr_10/initiatives/init_10/eng_tracking
+git pull
+
 echo "pulling iokr"
 cd ~/src/iokr
 git pull --recurse-submodules
