@@ -30,6 +30,9 @@ echo "pushing go"
 echo "pushing rust"
 ./endday_rust.sh
 
+echo "pushing python"
+./endday_python.sh
+
 echo "pushing node"
 ./endday_node.sh
 
