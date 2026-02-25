@@ -66,6 +66,14 @@ echo "pulling xray_audits"
 cd ~/src/iokr/teams/team_170/goals/goal_10/key_results/kr_10/initiatives/init_10/xray_audits
 git pull
 
+echo "pulling tms"
+cd ~/src/iokr/teams/team_120/goals/goal_10/key_results/kr_10/initiatives/init_10/tms
+git pull
+
+echo "pulling tool_management"
+cd ~/src/iokr/teams/team_120/goals/goal_10/key_results/kr_10/initiatives/init_20/tool_management
+git pull
+
 echo "pulling iokr"
 cd ~/src/iokr
 git pull --recurse-submodules
