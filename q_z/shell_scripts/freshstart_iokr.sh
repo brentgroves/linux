@@ -68,6 +68,9 @@ git switch main
 cd ~/src/iokr/teams/team_120/goals/goal_10/key_results/kr_10/initiatives/init_20/tool_management
 git switch main
 
+cd ~/src/iokr/teams/team_130/goals/goal_10/key_results/kr_10/initiatives/init_10/plex_fabric
+git switch main
+
 # cd ~/src/iokr
 # git add -A
 # git commit -m "Freshstart commit"
