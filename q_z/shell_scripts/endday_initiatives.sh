@@ -128,4 +128,11 @@ git push -u origin main
 # git commit -m "updated source code"
 # git push -u origin main
 
+cd ~/src/initiatives
+git switch main
+echo "commit initiatives changes"
+git add -A 
+git commit -m "updated source code"
+git push -u origin main
+
 popd
