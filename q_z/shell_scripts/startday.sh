@@ -19,8 +19,11 @@ echo "pulling research"
 echo "pulling linux"
 ./startday_linux.sh
 
-echo "pulling iokr"
-./startday_iokr.sh
+# echo "pulling iokr"
+# ./startday_iokr.sh
+
+echo "pulling initiatives"
+./startday_initiatives.sh
 
 echo "pulling liokr"
 ./startday_liokr.sh

@@ -18,8 +18,11 @@ echo "pushing research"
 echo "pushing linux"
 ./endday_linux.sh
 
-echo "pushing iokr"
-./endday_iokr.sh
+# echo "pushing iokr"
+# ./endday_iokr.sh
+
+echo "pushing initiatives"
+./endday_initiatives.sh
 
 echo "pushing liokr"
 ./endday_liokr.sh

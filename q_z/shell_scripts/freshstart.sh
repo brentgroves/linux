@@ -6,6 +6,7 @@
 ~/bin/shell_scripts/freshstart_research.sh
 ~/bin/shell_scripts/freshstart_linux.sh
 ~/bin/shell_scripts/freshstart_iokr.sh
+~/bin/shell_scripts/freshstart_initiatives.sh
 ~/bin/shell_scripts/freshstart_liokr.sh
 ~/bin/shell_scripts/freshstart_go.sh
 ~/bin/shell_scripts/freshstart_python.sh
