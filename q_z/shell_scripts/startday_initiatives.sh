@@ -66,6 +66,10 @@ echo "pulling xray_audits"
 cd ~/src/initiatives/xray_audits
 git pull
 
+echo "pulling fabric_guide"
+cd ~/src/initiatives/fabric_guide
+git pull
+
 # echo "pulling tms"
 # cd ~/src/iokr/teams/team_120/goals/goal_10/key_results/kr_10/initiatives/init_10/tms
 # git pull
