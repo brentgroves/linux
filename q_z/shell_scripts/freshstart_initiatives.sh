@@ -4,7 +4,7 @@ pushd .
 
 cd ~/src
 rm -rf ~/src/initiatives
-git clone --recursive git@bitbucket.org-brent_admin:liokr/initiatives.git
+git clone --recursive git@bitbucket.org-brent_admin:linamar_structures/initiatives.git
 
 cd ~/src/initiatives/xray_audits
 git switch main
