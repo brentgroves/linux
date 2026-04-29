@@ -7,6 +7,12 @@ THIS WAS DISCONTINUED.
 
 ```bash
 # sudo apt install neofetch
-
 sudo apt install neowofetch
+sudo apt update && sudo apt install fastfetch 
+sudo add-apt-repository ppa:zhangsongcui3371/fastfetch
+sudo apt update
+sudo apt install fastfetch
+
+sudo add-apt-repository --remove ppa:zhangsongcui3371/fastfetch
+
 ```
