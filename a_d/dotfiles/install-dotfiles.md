@@ -6,6 +6,12 @@
 
 ## new error
 
+After installing latex my command line prompts are displaying the wrong characters.
+
+**Fix:** In terminal preferences select custom font and choose the first selection mono.
+
+## old error
+
 You can fix error as shown below or just not install fzf until after dotfiles are deployed.
 
 ```bash
