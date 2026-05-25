@@ -63,6 +63,8 @@ git config --global init.defaultBranch main
 
 ## **[Setup user for SSH access to use GitHub](./ssh-github.md)**
 
+## - **[Configure multiple user name accounts](./setup_ssh_multiple_usernames.md)**
+
 ## Trouble-Shooting
 
 ### AI why does server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt

@@ -34,7 +34,7 @@ After this operation, 5,098 kB of additional disk space will be used.
 
 cd ~/Downloads
 -L means follow the redirects
-curl -LO https://sourceforge.net/projects/tmux.mirror/files/3.3/tmux-3.3.tar.gz
+curl -LO https://sourceforge.net/projects/tmux.mirror/files/3.6b/tmux-3.6b.tar.gz
 
 # https://sourceforge.net/projects/tmux.mirror/
 
@@ -45,6 +45,7 @@ curl -LO https://sourceforge.net/projects/tmux.mirror/files/3.3/tmux-3.3.tar.gz
 
 # sudo apt install ncurses-dev 
 # sudo apt install libevent-dev
+sudo apt-get install bison flex
 tar -zxf tmux-*.tar.gz
 cd tmux-*/
 ./configure

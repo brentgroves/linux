@@ -4,6 +4,18 @@
 **[Ubuntu 22.04 Server](../../ubuntu22-04/server-install.md)**\
 **[Back to Main](../../../README.md)**
 
+## **[Ubuntu 26.04](https://linuxconfig.org/how-to-install-visual-studio-code-on-ubuntu-26-04)**
+
+```bash
+$ sudo apt update
+$ sudo apt install curl gpg apt-transport-https
+$ curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor -o /usr/share/keyrings/microsoft.gpg
+$ echo "deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] https://packages.microsoft.com/repos/code stable main" | sudo tee /etc/apt/sources.list.d/vscode.list
+$ sudo apt update
+$ sudo apt install code
+code --version
+```
+
 <https://code.visualstudio.com/docs/setup/linux>
 
 Debian and Ubuntu based distributions#

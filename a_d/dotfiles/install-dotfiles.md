@@ -1,4 +1,4 @@
-# Install dotfiles
+c# Install dotfiles
 
 **[Ubuntu 22.04 Desktop](../../ubuntu22-04/desktop-install.md)**\
 **[Ubuntu 22.04 Server](../../ubuntu22-04/server-install.md)**\
@@ -66,7 +66,7 @@ git clone git@github.com:brentgroves/dotfiles.git
 git clone https://github.com:brentgroves/dotfiles.git
 git clone https://github.com/brentgroves/dotfiles.git
 # took out fzf because of error 
-sudo apt install zsh-antigen neofetch fonts-powerline
+sudo apt install zsh-antigen fonts-powerline
 # sudo apt install zsh-antigen neofetch fzf fonts-powerline
 # do not install tmux or nvim now
 cd ~/dotfiles

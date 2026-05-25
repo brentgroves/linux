@@ -11,6 +11,8 @@
 
 ## Install DBeaver
 
+This is in the app store now.
+
 ```bash
 sudo apt update
 sudo apt -y install default-jdk
