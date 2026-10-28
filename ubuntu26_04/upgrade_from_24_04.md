@@ -1,103 +1,46 @@
-# Install Ubuntu 24.04 Desktop
+# **[You Can Now Upgrade Ubuntu 24.04 LTS to Ubuntu 26.04 LTS, Here’s How](https://9to5linux.com/you-can-now-upgrade-ubuntu-24-04-lts-to-ubuntu-26-04-lts-heres-how)**
 
-**[Setup Dev System](../../development/report_system/setup_dev_system/setup_dev_system.md)**\
-**[Current Status](../../development/status/weekly/current_status.md)**\
-**[Back to Main](../../README.md)**
+Today, September 29th, 2026, Canonical has (finally) opened the upgrade path for Ubuntu 24.04 LTS (Noble Numbat) users to **[Ubuntu 26.04 LTS (Resolute Raccoon)](https://9to5linux.com/ubuntu-26-04-lts-resolute-raccoon-is-now-available-for-download)**, so here’s how to upgrade your installation.
 
-## **[Create Network Config file](./network_config.md)**
+To ensure a safe upgrade process for existing Ubuntu LTS users, Canonical delayed the upgrade path by about three weeks, but now it’s officially open, allowing Ubuntu 24.04 LTS to upgrade to Ubuntu 26.04 LTS and enjoy its new features and improvements.
 
-## **[Install Ubuntu Desktop](https://ubuntu.com/tutorials/install-ubuntu-desktop)**
+## How to upgrade Ubuntu 24.04 LTS to Ubuntu 26.04 LTS via GUI
 
-## Update apt packages after OS installation
+You should receive a notification that Ubuntu 26.04 LTS is available to upgrade. If you don’t get the notification, open the Software Updater utility, and it will say that “Ubuntu 26.04.1 LTS is now available (you have 24.04). Click on the “Upgrade” button to start the upgrade process.
 
-```bash
-sudo apt update -yq | sudo apt upgrade -yq
-```
+You will be prompted by a dialog with more information about the Ubuntu 26.04 LTS release if you’re interested in reading the full release notes, but you’re here to upgrade your system, so click on the “Upgrade” button to start the upgrade process.
 
-## Copy from Seagate
+![source](https://9to5linux.com/wp-content/uploads/2026/09/u24u1.webp)
 
-```bash
-mkdir -p ~/src
-# copy linux folder to ~/src directory
-# download vscode deb file
-# right click and install it with software center app.
-# open vscode installation markdown in vscode and finish the installation.
+Now, follow the on-screen instructions for a successful upgrade. However, before the upgrade process starts, you will be informed about what packages will be upgraded, installed, or removed, as well as that you must close all open windows and documents to avoid data loss, and that the lock screen has been disabled and will remain disabled during the upgrade process.
 
-```
+![source](https://9to5linux.com/wp-content/uploads/2026/09/u24u3.webp)
+![source](https://9to5linux.com/wp-content/uploads/2026/09/u24u4.webp)
 
-## Install **[SSH](../q_z/ssh/ssh-server.md)**
+During the upgrade process, which can take up to an hour or more to complete, depending on your Internet bandwidth and computer’s specs, you may see a notification to restart certain daemons running on your Ubuntu installation or replace some configuration files with new ones, so choose whether you want to do so or not.
 
-## Install **[Gnome Remote Desktop](https://gitlab.gnome.org/GNOME/gnome-remote-desktop)** server
+![source](https://9to5linux.com/wp-content/uploads/2026/09/u24u2.webp)
 
-## Connect to new host remotely
+![source](https://9to5linux.com/wp-content/uploads/2026/09/u24u5.webp)
+
+## How to upgrade Ubuntu 24.04 LTS to Ubuntu 26.04 LTS via CLI
+
+As usual, before attempting to upgrade your Ubuntu installation, ensure you have a recent backup of your most important files (you know, just in case something bad happens during the upgrade process). Also, make sure that your Ubuntu 24.04 LTS system is up to date by running the following commands in the Terminal app or by using the Software Updater utility.
 
 ```bash
-# ssh to new host
-ssh brent@repsys13
-# xrdp to new host
+sudo apt update && sudo apt full-upgrade
 ```
 
-## install prereqs and basic packages
+Reboot your system. Now, if you don’t see a notification that Ubuntu 26.04 LTS is available to upgrade, open the Terminal app and run the command below to start the upgrade process to Ubuntu 26.04 LTS “Resolute Raccoon”.
 
 ```bash
-# you may have to reinstall curl
-sudo snap remove curl
-sudo apt install curl
-sudo apt install build-essential libnss3-tools
+do-release-upgrade
 ```
 
-## **[update with home or work hosts file](../e_j/hosts/)**
+To continue, press y. Wait for the command to gather all the necessary data, and when it finishes, you will be asked, “Do you want to start the upgrade?” so press y again to continue. Press Enter when you see the lock screen disabled notification.
 
-## install applications
+Wait for all the packages needed for the upgrade to be fetched. The upgrade will start automatically, and it can take up to an hour or more to complete, depending on your Internet bandwidth and computer’s specs.
 
-- Update **[/etc/hosts file](../e_j/hosts/)**
-- **[chrome](../a_d/chrome/install.md)**
-- **[git](../e_j/git/git.md)**
-- **[vsftpd server](../q_z/vsftpd/vsftpd-server.md)**
-- **[lftp client](../k_p/lftp/lftp_client.md)**
-- **[shell scripts](../../research/software_development/shell_scripts/deploy_scripts.sh)**
-<!-- **[pass](../pass/pass.md)**  -->
-- **[code](../a_d/code/code.md)**df
-- **[screen](../q_z/screen/install-screen.md)**
-- **[miniconda](../a_d/conda/miniconda-install.md)**
-- **[uv](../k_p/python/uv/uv-install.md)**
-- **[neofetch](../k_p/neofetch/install-neofetch.md)**
-- **[homebrew](../e_j/homebrew/homebrew-install.md)**
-- **[nvm](../k_p/nvm/install-node-version-manager.md)**
-- **[dotfiles](../a_d/dotfiles/install-dotfiles.md)**
-- **[neovim](../k_p/neovim/install-neovim.md)**
-- **[tmux](../q_z/tmux/tmux.md)**
-- **[remmina](../q_z/remmina/remmina_install.md)**
-<!-- cron -- this is already installed on ubuntu 22.04 -->
-<!-- email - check in reports docker file was part of pipeline  -->
-- **[dbeaver](../a_d/dbeaver/dbeaver.md)**
-- **[soapui](../q_z/soapui/soapui_install.md)**
+When the upgrade process is complete, you will be notified about the obsolete packages that will be automatically removed. After that, you will be prompted to restart your computer to complete the upgrade process, but don’t forget to save your work before doing so.
 
-- **[ksh](../k_p/ksh/ksh_install.md)**
-- **[odbc](../k_p/odbc/install-ubuntu.md)**
-<!-- # I don't think I need an older version for because I don't install a local version of mongodb and conda can install an older ssl if needed for pysoap -->
-<!-- ssl -- older ssl for mongodb and pysoap. -->
-<!-- openssl -->
-<!-- - **[ssh client](../q_z/ssh/ssh-client.md)** should already be installed-->
-
-- **[redis client](../q_z/redis/redis_client_install.md)**
-- **[mysql client](../k_p/mysql/mysql-client.md)**
-- **[mysql shell](../k_p/mysql/mysql-shell.md)**
-- **[postgres client](../k_p/postgres/psql/psql-install.md)**
-- **[meld](../k_p/meld/meld_install.md)**
-- **[ghex](../e_j/ghex/ghex_install.md)**
-- **[postman](../k_p/postman/postman-install.md)**
-<!-- gnome system monitor - System monitor was already installed on ubuntu 22.04 -->
-<!-- teams standalone app not supported in Linux use web app teams.microsoft.com/v2 instead  -->
-- **[docker](../a_d/docker/install.md)**
-- **[microk8s](../../k8s/microk8s_1.28_install.md)**
-- **[kubectl](../../k8s/kubectl-install.md)**
-- **[java](../e_j/java/java.md)**
-- **[ant](../a_d/ant/ant-install.md)**
-- **[Free Pascal](../k_p/pascal/free_pascal-install.md)**
-- **[utils](../q_z/utils/utils-install.md)**
-- **[mongosh](../k_p/mongosh/install-mongosh.md)**
-- **[studio-3t](../q_z/studio-3t/studio-3t-intall.md)**
-- **[azure_cli](../a_d/azure/azure_cli.md)**
-<!-- Only do this if you need to mount old qnap or a Windows drive -->
-- **[Mount Windows smb device](../q_z/smb/mount-smb.md)**
+That’s it! You successfully upgraded your Ubuntu 24.04 LTS (Noble Numbat), so it’s time to enjoy the plethora of new features and enhancements included in the Ubuntu 26.04 LTS (Resolute Raccoon) release.
